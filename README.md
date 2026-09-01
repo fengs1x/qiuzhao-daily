@@ -24,10 +24,10 @@ crawler/                 爬虫与数据构建（纯 Python 标准库 + lxml）
   ├── common.py          HTTP 请求 / 限速 / 重试
   ├── youoffer.py        Offer派 秋招信息（每日抓前 5 页）
   ├── hahazhao.py        今日校招（每日抓前 5 页，补全行业字段）
-  ├── build.py           合并数据 → web/data/data.json + web/js/data.js
+  ├── build.py           合并数据 → docs/data/data.json + docs/js/data.js
   ├── update_daily.py    每日更新入口（youoffer --daily + hahazhao --pages 5 + build）
   └── data/*.json        增量累积的源站数据（随仓库保存，构成历史）
-web/                     PWA 前端（App 本体）
+docs/                    PWA 前端（App 本体，由 GitHub Pages 托管）
   ├── index.html / app.js / style.css
   ├── data/data.json     App 拉取的数据
   └── js/data.js         离线兜底数据

@@ -25,9 +25,9 @@ from collections import Counter, defaultdict
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT, "data")
 APP_DATA_DIR = os.path.normpath(os.environ.get(
-    "OUTPUT_DATA_DIR", os.path.join(ROOT, "..", "web", "data")))
+    "OUTPUT_DATA_DIR", os.path.join(ROOT, "..", "docs", "data")))
 APP_JS_DIR = os.path.normpath(os.environ.get(
-    "OUTPUT_JS_DIR", os.path.join(ROOT, "..", "web", "js")))
+    "OUTPUT_JS_DIR", os.path.join(ROOT, "..", "docs", "js")))
 
 RECRUIT_KEYWORDS = ("秋招", "校招", "校园招聘", "校园")
 SUFFIX_RE = re.compile(
