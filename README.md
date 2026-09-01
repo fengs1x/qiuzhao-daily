@@ -5,7 +5,7 @@
 ## 工作原理
 
 ```
-GitHub Actions（每天 21:00 自动跑）
+GitHub Actions（每天 7:00-21:00 每隔 2 小时自动跑）
         │  运行爬虫（youoffer + hahazhao）
         ▼
 crawler/data/*.json   ← 增量累积历史数据
@@ -41,9 +41,9 @@ GitHub 仓库 → **Actions** → **每日抓取秋招数据** → **Run workflo
 ## 手机端使用
 
 - **iPhone / Android 浏览器**：访问 `https://<用户名>.github.io/<仓库名>/`，可"添加到主屏幕"当 App 用。
-- **Android APK**：在 App 设置里把服务器地址填为 `https://cdn.jsdelivr.net/gh/<用户名>/<仓库名>@main`，即可通过 CDN 拉取每日最新数据。
+- **Android APK**：在 App 设置里把服务器地址填为 `https://cdn.jsdelivr.net/gh/<用户名>/<仓库名>@main/docs`，即可通过 CDN 拉取每日最新数据。
 
-> 说明：GitHub 静态托管模式下数据**每天自动更新**；App 里的"手动刷新"会重新拉取服务器最新数据（无法像自有后端那样即时触发爬虫，但每天 21:00 会自动抓到最新）。
+> 说明：GitHub 静态托管模式下数据**每天 7:00-21:00 每隔 2 小时自动更新**；App 里的"手动刷新"会重新拉取服务器最新数据（无法像自有后端那样即时触发爬虫，但每 2 小时会自动抓到最新）。
 
 ## 注意事项
 
