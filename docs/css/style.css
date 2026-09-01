@@ -308,8 +308,9 @@ body {
 .fav-btn:active { transform: scale(1.25); }
 .fav-btn.on { color: var(--danger); animation: pop .25s ease; }
 @keyframes pop { 0% { transform: scale(.6); } 60% { transform: scale(1.25); } 100% { transform: scale(1); } }
-.card-head { display: flex; align-items: center; gap: 7px; margin-bottom: 9px; }
-.card-name { font-size: 16px; font-weight: 700; line-height: 1.35; flex: 1; }
+.card-head { display: flex; align-items: center; gap: 7px; margin-bottom: 6px; }
+.card-name { font-size: 16px; font-weight: 700; line-height: 1.4; flex: 1; min-width: 0; }
+.card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
 
 /* 26届青蓝圆点 */
 .dot26 {
@@ -367,7 +368,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
   display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 14px;
+  padding: calc(env(safe-area-inset-top, 0px) + 28px) 14px 12px;
 }
 .detail-top .icon-btn { background: var(--brand-soft); color: var(--brand-deep); }
 .detail-title { font-size: 16px; font-weight: 700; }

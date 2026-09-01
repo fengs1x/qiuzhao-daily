@@ -497,7 +497,7 @@
     var card = document.createElement("div");
     card.className = "card" + (isFav(c.name) ? " is-fav" : "");
 
-    // 头部
+    // 头部（公司名独占一行，标签放到第二行，长名不被挤压）
     var head = document.createElement("div");
     head.className = "card-head";
     if (c.is_26) {
@@ -510,27 +510,31 @@
     name.className = "card-name";
     name.textContent = c.name;
     head.appendChild(name);
+    head.appendChild(makeFavBtn(c));
 
+    // 标签行
+    var tags = document.createElement("div");
+    tags.className = "card-tags";
     if (c.recruit_type) {
       var rb = document.createElement("span");
       rb.className = "badge badge-recruit";
       rb.textContent = c.recruit_type;
-      head.appendChild(rb);
+      tags.appendChild(rb);
     }
     if (c.company_type) {
       var cb = document.createElement("span");
       cb.className = "badge badge-type";
       cb.textContent = c.company_type;
-      head.appendChild(cb);
+      tags.appendChild(cb);
     }
     if (c.is_26) {
       var b26 = document.createElement("span");
       b26.className = "badge badge-26";
       b26.textContent = "26届";
-      head.appendChild(b26);
+      tags.appendChild(b26);
     }
-    head.appendChild(makeFavBtn(c));
     card.appendChild(head);
+    card.appendChild(tags);
 
     // 信息行
     var rows = document.createElement("div");
