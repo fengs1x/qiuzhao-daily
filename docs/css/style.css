@@ -1,4 +1,4 @@
-/* ===== 秋招每日通 样式 v2 ===== */
+﻿/* ===== 秋招每日通 样式 v2 ===== */
 :root {
   --brand: #00A8C8;          /* 主青蓝色 */
   --brand-deep: #0087A0;
@@ -462,7 +462,7 @@ body {
   border-top: 1px solid var(--line);
 }
 .modal-foot .btn-link { margin-bottom: 0; flex: 1; }
-.modal-foot .btn-link.secondary { flex: 0 0 auto; padding: 14px 20px; }
+.modal-foot .btn-link.secondary { flex: 0 0 auto; width: auto; padding: 14px 20px; }
 
 /* ===== Toast ===== */
 .toast {
@@ -485,3 +485,6 @@ body {
   body { background: #E9EEF0; }
   .appbar-inner, .filter-row, .filter-row2, .tabs, .list-view, .detail-body, .notice-banner { max-width: 640px; }
 }
+
+/* 修复：确保 hidden 属性始终生效（避免 .modal 等 display 规则覆盖导致弹窗无法关闭） */
+[hidden] { display: none !important; }
