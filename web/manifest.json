@@ -1,0 +1,26 @@
+{
+  "name": "秋招每日通",
+  "short_name": "秋招每日通",
+  "description": "每日汇总秋招今日新增与进行中的校招信息，支持 26 届可投筛选、行业筛选与离线查看。",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F6F7",
+  "theme_color": "#00A8C8",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

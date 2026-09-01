@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#00A8C8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="description" content="秋招每日通：每日汇总秋招今日新增与进行中的校招信息，支持 26 届可投筛选。">
+<title>秋招每日通</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== 顶部标题栏 ========== -->
+<header class="appbar">
+  <div class="appbar-inner">
+    <div class="appbar-title">
+      <h1>秋招每日通</h1>
+      <div class="appbar-date" id="todayLabel">--</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <button class="icon-btn" id="settingsBtn" title="设置服务器地址" aria-label="设置">⚙</button>
+      <button class="icon-btn" id="refreshBtn" title="手动刷新数据" aria-label="刷新">⟳</button>
+    </div>
+  </div>
+</header>
+
+<!-- ========== 筛选栏 ========== -->
+<div class="filter-bar">
+  <div class="filter-row">
+    <div class="switch-wrap">
+      <span class="switch-label">26届可投</span>
+      <label class="switch">
+        <input type="checkbox" id="switch26">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="search-wrap">
+      <input type="search" id="searchInput" placeholder="搜索公司 / 岗位 / 专业 / 城市" autocomplete="off">
+    </div>
+  </div>
+  <div class="filter-row2">
+    <select id="industrySelect" class="filter-select">
+      <option value="">全部行业</option>
+    </select>
+    <select id="typeSelect" class="filter-select">
+      <option value="">全部单位</option>
+    </select>
+    <select id="locSelect" class="filter-select">
+      <option value="">全部地点</option>
+    </select>
+    <select id="yearSelect" class="filter-select">
+      <option value="">全部届数</option>
+    </select>
+    <span class="filter-tip" id="filterTip"></span>
+  </div>
+</div>
+
+<!-- ========== 今日新增通知横幅 ========== -->
+<div class="notice-banner" id="noticeBanner" hidden>
+  <span id="noticeText"></span>
+  <button class="notice-close" id="noticeClose" aria-label="关闭">✕</button>
+</div>
+
+<!-- ========== Tab ========== -->
+<nav class="tabs">
+  <button class="tab active" data-tab="today_new">今日新增 <span class="tab-count" id="countToday">0</span></button>
+  <button class="tab" data-tab="ongoing">正在进行 <span class="tab-count" id="countOngoing">0</span></button>
+  <button class="tab" data-tab="favorites">我的收藏 <span class="tab-count" id="countFav">0</span></button>
+</nav>
+
+<!-- ========== 列表 ========== -->
+<main class="list-view" id="listView">
+  <div class="loading" id="loading">
+    <div class="skeleton"><div class="sk-line w100"></div><div class="sk-line w60"></div><div class="sk-line w80"></div></div>
+    <div class="skeleton"><div class="sk-line w100"></div><div class="sk-line w60"></div><div class="sk-line w80"></div></div>
+    <div class="skeleton"><div class="sk-line w100"></div><div class="sk-line w60"></div><div class="sk-line w80"></div></div>
+  </div>
+  <div class="empty" id="empty" hidden>暂无符合条件的公司</div>
+  <div id="cardList"></div>
+</main>
+
+<!-- ========== 详情页 ========== -->
+<section class="detail-view" id="detailView" hidden>
+  <div class="detail-top">
+    <button class="icon-btn" id="backBtn" aria-label="返回">‹</button>
+    <span class="detail-title">公司详情</span>
+    <div class="detail-actions" id="detailActions"></div>
+  </div>
+  <div class="detail-body" id="detailBody"></div>
+</section>
+
+<div class="toast" id="toast" hidden></div>
+
+<!-- ========== 设置：服务器地址（脱离电脑版） ========== -->
+<div class="modal" id="settingsModal" hidden>
+  <div class="modal-card">
+    <div class="modal-head">
+      <span class="modal-title">设置</span>
+      <button class="modal-close" id="settingsClose" aria-label="关闭">✕</button>
+    </div>
+    <div class="modal-body">
+      <label class="modal-label">服务器地址（云端后端）</label>
+      <input class="modal-input" id="settingsInput" type="url" placeholder="http://服务器IP:8080" autocomplete="off">
+      <div class="modal-status" id="settingsStatus">当前：--</div>
+      <div class="modal-hint">手机 App 的数据与「刷新」都从这里获取。<br>留空 = 使用当前页面来源（网页版免设置）。</div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn-link secondary" id="settingsClear">清空</button>
+      <button class="btn-link" id="settingsSave">保存</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js?v=8"></script>
+</body>
+</html>
