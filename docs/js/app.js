@@ -176,7 +176,10 @@
   function baseUrl() {
     var v = "";
     try { v = localStorage.getItem(LS_SERVER) || ""; } catch (e) {}
-    return v.replace(/\/+$/, "");
+    if (v) { return v.replace(/\/+$/, ""); }
+    // 网页版部署在子路径（GitHub Pages / CDN）时，取当前页面所在目录作为数据源基础路径
+    var p = (location.pathname || "/").replace(/[^/]*$/, "").replace(/\/+$/, "");
+    return p;
   }
   function serverLabel() {
     var v = baseUrl();
