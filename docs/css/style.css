@@ -489,3 +489,10 @@ body {
 
 /* 修复：确保 hidden 属性始终生效（避免 .modal 等 display 规则覆盖导致弹窗无法关闭） */
 [hidden] { display: none !important; }
+
+/* ===== 左右滑动切换标签 ===== */
+#listView { touch-action: pan-y; }
+@keyframes swipeLeftIn { from { opacity: .5; transform: translateX(26px); } to { opacity: 1; transform: none; } }
+@keyframes swipeRightIn { from { opacity: .5; transform: translateX(-26px); } to { opacity: 1; transform: none; } }
+.list-view.swipe-left { animation: swipeLeftIn .22s ease; }
+.list-view.swipe-right { animation: swipeRightIn .22s ease; }

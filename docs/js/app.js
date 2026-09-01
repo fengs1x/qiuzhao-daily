@@ -778,6 +778,44 @@
     }
   }
 
+  // ---------- 标签切换（点击 + 左右滑动） ----------
+  var TAB_ORDER = ["today_new", "ongoing", "favorites"];
+  function switchTab(tabName, dir) {
+    var target = document.querySelector('.tab[data-tab="' + tabName + '"]');
+    if (!target || state.tab === tabName) { return; }
+    document.querySelectorAll(".tab").forEach(function (x) { x.classList.remove("active"); });
+    target.classList.add("active");
+    state.tab = tabName;
+    if (el.listView) {
+      el.listView.classList.remove("swipe-left", "swipe-right");
+      if (dir === "left") { el.listView.classList.add("swipe-left"); }
+      if (dir === "right") { el.listView.classList.add("swipe-right"); }
+    }
+    resetView();
+    renderList();
+  }
+  function initSwipe() {
+    var listEl = el.listView;
+    if (!listEl) { return; }
+    var sx = 0, sy = 0, active = false;
+    listEl.addEventListener("pointerdown", function (e) {
+      if (!el.detailView.hidden) { active = false; return; }
+      sx = e.clientX; sy = e.clientY; active = true;
+    });
+    listEl.addEventListener("pointermove", function (e) {
+      if (!active) { return; }
+      var dx = e.clientX - sx, dy = e.clientY - sy;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        active = false;
+        var idx = TAB_ORDER.indexOf(state.tab);
+        if (dx < 0 && idx < TAB_ORDER.length - 1) { switchTab(TAB_ORDER[idx + 1], "left"); }
+        else if (dx > 0 && idx > 0) { switchTab(TAB_ORDER[idx - 1], "right"); }
+      }
+    });
+    listEl.addEventListener("pointerup", function () { active = false; });
+    listEl.addEventListener("pointercancel", function () { active = false; });
+  }
+
   // ---------- 事件绑定 ----------
   function bindEvents() {
     el.switch26.addEventListener("change", function () {
@@ -816,14 +854,9 @@
     });
 
     document.querySelectorAll(".tab").forEach(function (t) {
-      t.addEventListener("click", function () {
-        document.querySelectorAll(".tab").forEach(function (x) { x.classList.remove("active"); });
-        t.classList.add("active");
-        state.tab = t.getAttribute("data-tab");
-        resetView();
-        renderList();
-      });
+      t.addEventListener("click", function () { switchTab(t.getAttribute("data-tab")); });
     });
+    initSwipe();
 
     el.backBtn.addEventListener("click", closeDetail);
     el.noticeClose.addEventListener("click", function () { el.noticeBanner.hidden = true; });
