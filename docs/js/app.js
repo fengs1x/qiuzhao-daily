@@ -10,6 +10,8 @@
   var DB_NAME = "qiuzhao-db";
   var STORE = "data";
   var RENDER_BATCH = 40; // 每次渲染条数（无限滚动）
+  var LS_NOTIFY_SEEN = "qd_notify_seen"; // 已提醒过的通知 id
+  var NOTIFY_INTERVAL = 5 * 60 * 1000;   // 打开 App 时每 5 分钟自查一次新岗位
 
   var HEART_OFF = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 20.5S4.5 16 2.8 11.3C1.6 8 3.4 5 6.4 5c2 0 3.5 1.2 4.3 2.4C11.5 6.2 13 5 15 5c3 0 4.8 3 3.6 6.3C17 16 12 20.5 12 20.5z"/></svg>';
   var HEART_ON = '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 20.5S4.5 16 2.8 11.3C1.6 8 3.4 5 6.4 5c2 0 3.5 1.2 4.3 2.4C11.5 6.2 13 5 15 5c3 0 4.8 3 3.6 6.3C17 16 12 20.5 12 20.5z"/></svg>';
@@ -310,6 +312,67 @@
         toast("已抓取今日最新数据 · 更新于 " + gen);
       }
     });
+  }
+
+
+  // ---------- 新增岗位通知（App 内自查，无需外部推送服务） ----------
+  function showSystemNotify(title, msg) {
+    // APK（Capacitor 本地通知 → 手机通知栏）
+    try {
+      if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.LocalNotifications) {
+        var ln = window.Capacitor.Plugins.LocalNotifications;
+        ln.requestPermissions().then(function (perm) {
+          if (perm && perm.display === false) { toast(title + " " + msg); return; }
+          ln.schedule({
+            notifications: [{
+              id: Math.floor(Date.now() / 1000) % 100000,
+              title: title,
+              body: msg,
+              smallIcon: "ic_stat_icon",
+              iconColor: "#00A8C8"
+            }]
+          });
+        }).catch(function () { toast(title + " " + msg); });
+        return;
+      }
+    } catch (e) {}
+    // 网页版（PWA，浏览器系统通知）
+    try {
+      if ("Notification" in window) {
+        if (Notification.permission === "granted") {
+          new Notification(title, { body: msg, tag: "qiuzhao-daily" });
+          return;
+        }
+        if (Notification.permission !== "denied") {
+          Notification.requestPermission().then(function (p) {
+            if (p === "granted") { new Notification(title, { body: msg, tag: "qiuzhao-daily" }); }
+            else { toast(title + " " + msg); }
+          });
+          return;
+        }
+        return;
+      }
+    } catch (e) {}
+    // 兜底：App 内提示
+    toast(title + " " + msg);
+  }
+
+  function checkNotify() {
+    var u = baseUrl();
+    // baseUrl 为空 = 使用当前页面来源，此时用相对路径取通知文件
+    var url = u ? (u + "/latest_notify.json?t=" + Date.now()) : ("latest_notify.json?t=" + Date.now());
+    return fetch(url, { cache: "no-store" })
+      .then(function (r) { if (!r.ok) { throw new Error("no-notify"); } return r.json(); })
+      .then(function (nf) {
+        if (!nf || !nf.id) { return; }
+        var seen = 0;
+        try { seen = parseInt(localStorage.getItem(LS_NOTIFY_SEEN) || "0", 10) || 0; } catch (e) {}
+        if (nf.id > seen) {
+          showSystemNotify(nf.title || "🎯 秋招有新岗位", nf.msg || "有新的招聘岗位，快去看看！");
+          try { localStorage.setItem(LS_NOTIFY_SEEN, String(nf.id)); } catch (e) {}
+        }
+      })
+      .catch(function () { /* 无通知文件或离线，忽略 */ });
   }
 
   // ---------- 过滤 ----------
@@ -863,6 +926,10 @@
 
     bindEvents();
     loadData(false);
+    checkNotify();   // 打开时立即检查一次新岗位
+    setInterval(function () {
+      if (document.visibilityState !== "hidden") { checkNotify(); }
+    }, NOTIFY_INTERVAL);
 
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js").catch(function () {});
