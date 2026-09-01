@@ -96,3 +96,10 @@ EOF
             git commit -m "chore: 数据更新 $(date -u +'%Y-%m-%d %H:%M') UTC"
             git push
           fi
+
+      - name: 刷新 jsDelivr CDN 缓存
+        run: |
+          for p in "docs/data/data.json" "docs/js/data.js" "docs/js/app.js" "docs/sw.js" "docs/index.html"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "https://purge.jsdelivr.net/gh/fengs1x/qiuzhao-daily@main/$p")
+            echo "purge $p -> $code"
+          done
