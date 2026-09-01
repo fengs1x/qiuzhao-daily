@@ -1,4 +1,4 @@
-/* ===== 秋招每日通 App 逻辑 v2 ===== */
+﻿/* ===== 秋招每日通 App 逻辑 v2 ===== */
 (function () {
   "use strict";
 
@@ -279,7 +279,7 @@
       .then(function (r) { return r.json(); })
       .then(function (s) {
         if (s.status === "running") {
-          toast("正在抓取今日最新数据（约 1~2 分钟）…");
+          // 提示只在点击刷新时显示一次，轮询过程不再重复弹出
           refreshState.timer = setTimeout(pollRefresh, 2500);
           return;
         }
@@ -297,6 +297,7 @@
   function finishRefresh(s) {
     refreshState.busy = false;
     el.refreshBtn.classList.remove("spin");
+    refreshState.tries = 0;
     if (refreshState.timer) { clearTimeout(refreshState.timer); }
     refreshState.timer = null;
     loadData(true).then(function () {
