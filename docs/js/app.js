@@ -25,6 +25,7 @@
     companyType: "",
     location: "",
     year: "",
+    major: "",
     visible: RENDER_BATCH, // 已渲染条数
     filteredLen: 0         // 当前筛选结果总数
   };
@@ -385,6 +386,13 @@
       if (state.companyType && typeBucket(c.company_type) !== state.companyType) { return false; }
       if (state.location && locTokens(c.location).indexOf(state.location) < 0) { return false; }
       if (state.year && (c.years || []).indexOf(state.year) < 0) { return false; }
+      if (state.major === "专业不限") {
+        var hasMaj = (c.majors || []).some(function (m) { return !/不限/.test(m || "") && (m || "").trim(); });
+        if (hasMaj) { return false; }
+      } else if (state.major) {
+        var majHit = companyMajorText(c).indexOf(state.major.toLowerCase()) >= 0;
+        if (!majHit) { return false; }
+      }
       if (state.search) {
         var q = state.search.toLowerCase();
         var hay = (c.name + " " + (c.position || "") + " " + (c.location || "") + " " +
@@ -408,6 +416,7 @@
     buildTypeOptions();
     buildLocOptions();
     buildYearOptions();
+    buildMajorOptions();
     renderList();
     checkNotice(meta);
   }
@@ -493,6 +502,45 @@
     sel.value = state.year;
   }
 
+  // 预置常用专业词表：匹配范围 = 专业 + 岗位 + 主题文本
+  var MAJOR_PRESETS = ["计算机", "软件工程", "自动化", "电子信息", "通信工程", "人工智能",
+    "机械", "电气", "材料", "化学", "生物", "物理", "数学", "统计学",
+    "金融", "会计", "经济学", "市场营销", "工商管理", "人力资源", "物流",
+    "土木", "建筑", "法学", "教育", "心理学", "医学", "药学", "护理",
+    "英语", "环境", "能源"];
+
+  function companyMajorText(c) {
+    return (((c.majors || []).join(" ") + " " + (c.position || "") + " " + (c.title || ""))).toLowerCase();
+  }
+
+  function buildMajorOptions() {
+    var sel = el.majorSelect;
+    if (!sel) { return; }
+    if (sel.dataset.built === "1") { sel.value = state.major; return; }
+    var cnt = {};
+    MAJOR_PRESETS.forEach(function (w) { cnt[w] = 0; });
+    state.data.companies.forEach(function (c) {
+      var t = companyMajorText(c);
+      MAJOR_PRESETS.forEach(function (w) { if (t.indexOf(w) >= 0) { cnt[w]++; } });
+    });
+    var picks = MAJOR_PRESETS.filter(function (w) { return cnt[w] > 0; })
+      .sort(function (a, b) { return cnt[b] - cnt[a]; });
+    sel.innerHTML = "";
+    var all = document.createElement("option");
+    all.value = ""; all.textContent = "全部专业";
+    sel.appendChild(all);
+    var unlim = document.createElement("option");
+    unlim.value = "专业不限"; unlim.textContent = "专业不限";
+    sel.appendChild(unlim);
+    picks.forEach(function (w) {
+      var opt = document.createElement("option");
+      opt.value = w; opt.textContent = w + "（" + cnt[w] + "）";
+      sel.appendChild(opt);
+    });
+    sel.dataset.built = "1";
+    sel.value = state.major;
+  }
+
   function buildCard(c) {
     var card = document.createElement("div");
     card.className = "card" + (isFav(c.name) ? " is-fav" : "");
@@ -544,6 +592,14 @@
       rows.appendChild(row("岗位", pv, false, true));
     } else if (c.title) {
       rows.appendChild(row("主题", c.title, false, false));
+    }
+    // 专业要求行：有专业标注显示具体专业，无标注显示"专业不限"
+    var mArr = (c.majors && c.majors.length) ? c.majors : null;
+    if (mArr) {
+      var mPv = mArr.slice(0, 2).join("、") + (mArr.length > 2 ? " 等" + mArr.length + "个" : "");
+      rows.appendChild(row("专业", mPv, false, false));
+    } else {
+      rows.appendChild(row("专业", "专业不限", false, false));
     }
     if (c.target_years) {
       rows.appendChild(row("目标届数", c.target_years, true));
@@ -619,6 +675,7 @@
     if (state.companyType) { parts.push(state.companyType); }
     if (state.location) { parts.push(state.location); }
     if (state.year) { parts.push(state.year + "届"); }
+    if (state.major) { parts.push(state.major); }
     if (state.search) { parts.push("“" + state.search + "”"); }
     el.filterTip.textContent = parts.length ? parts.join(" · ") + " · " + total + " 家" : "共 " + total + " 家";
   }
@@ -852,6 +909,10 @@
       state.year = el.yearSelect.value;
       resetView(); renderList();
     });
+    el.majorSelect.addEventListener("change", function () {
+      state.major = el.majorSelect.value;
+      resetView(); renderList();
+    });
 
     document.querySelectorAll(".tab").forEach(function (t) {
       t.addEventListener("click", function () { switchTab(t.getAttribute("data-tab")); });
@@ -930,6 +991,7 @@
     el.typeSelect = $("typeSelect");
     el.locSelect = $("locSelect");
     el.yearSelect = $("yearSelect");
+    el.majorSelect = $("majorSelect");
     el.filterTip = $("filterTip");
     el.noticeBanner = $("noticeBanner");
     el.noticeText = $("noticeText");

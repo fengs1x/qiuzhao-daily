@@ -89,6 +89,17 @@ def is_expired(deadline, today):
     return d < today
 
 
+def is_placeholder_date(d):
+    """判断是否为源站占位日期（如 2026-12-31 / 2099-01-01），占位视为无效。"""
+    if not d:
+        return True
+    if re.match(r"^\d{4}-12-31$", d) or re.match(r"^\d{4}-01-01$", d):
+        return True
+    if d.startswith(("2099", "9999", "2100")):
+        return True
+    return False
+
+
 def main():
     today = time.strftime("%Y-%m-%d")
     print("今天:", today)
@@ -129,6 +140,15 @@ def main():
                 return ind
         return ""
 
+    # ---------- 1.5 今日校招公司名 -> 最新有效更新时间（修正同名记录的新增状态） ----------
+    haz_latest = {}
+    for h in haz_companies.values():
+        upd = (h.get("update_time") or "").strip()[:10]
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", upd) and not is_placeholder_date(upd):
+            n = normalize_name(h.get("name", ""))
+            if n and (n not in haz_latest or upd > haz_latest[n]):
+                haz_latest[n] = upd
+
     # ---------- 2. 处理 YouOffer 主记录 ----------
     out = []
     seen_names = set()
@@ -137,6 +157,13 @@ def main():
         if not any(k in rt for k in RECRUIT_KEYWORDS):
             continue
         post_date = (rec.get("post_date") or "").strip()[:10]
+        # 无效/占位日期（如 -0001-11-30、2026-12-31）置空
+        if not re.match(r"^\d{4}-\d{2}-\d{2}$", post_date) or is_placeholder_date(post_date):
+            post_date = ""
+        # 若今日校招有该公司的更新（update_time 更晚），采用其更新时间以反映"今日新增"
+        n0 = normalize_name(rec.get("name", ""))
+        if n0 in haz_latest and haz_latest[n0] > post_date:
+            post_date = haz_latest[n0]
         if is_expired(rec.get("deadline", ""), today):
             continue
         years = parse_years(rec.get("target_years", ""))
@@ -168,7 +195,13 @@ def main():
         seen_names.add(normalize_name(item["name"]))
 
     # ---------- 3. 补充 hahazhao 独有公司 ----------
-    for h in haz_companies.values():
+    # 同一公司在 hahazhao 可能有多个年份公告，按更新时间降序处理，最新公告优先收录
+    haz_sorted = sorted(
+        haz_companies.values(),
+        key=lambda x: (x.get("update_time") or x.get("publish_date") or ""),
+        reverse=True,
+    )
+    for h in haz_sorted:
         rt = h.get("recruit_type", "") or ""
         if not any(k in rt for k in RECRUIT_KEYWORDS):
             continue
@@ -180,18 +213,10 @@ def main():
         upd = (h.get("update_time") or "").strip()[:10]
         # 源站 publish_date 未提供时会填占位日期（如 2026-12-31），需剔除；
         # 更新时间以源站 update_time 为准，缺失时才回退到真实 publish_date
-        def is_placeholder(d):
-            if not d:
-                return True
-            if re.match(r"^\d{4}-12-31$", d) or re.match(r"^\d{4}-01-01$", d):
-                return True
-            if d.startswith(("2099", "9999", "2100")):
-                return True
-            return False
-        if upd:
+        if re.match(r"^\d{4}-\d{2}-\d{2}$", upd) and not is_placeholder_date(upd):
             post_date = upd
         else:
-            post_date = pub if not is_placeholder(pub) else ""
+            post_date = pub if (re.match(r"^\d{4}-\d{2}-\d{2}$", pub) and not is_placeholder_date(pub)) else ""
         if is_expired(h.get("deadline", ""), today):
             continue
         years = parse_years(h.get("recruit_target", ""))
