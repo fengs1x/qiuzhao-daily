@@ -20,13 +20,14 @@ jobs:
           python-version: "3.12"
       - run: pip install --quiet lxml
 
-      - name: 复现 crawl 全部后续步骤
+      - name: 复现 crawl 全部步骤（不中断，逐段记录退出码）
         run: |
-          set -x
-          echo "==== STEP-A update_daily ===="
-          python crawler/update_daily.py > dump-a.txt 2>&1
+          set +e
+          : > dump-a.txt
+          echo "==== STEP-A update_daily ====" >> dump-a.txt
+          python crawler/update_daily.py >> dump-a.txt 2>&1
           echo "A_EXIT=$?" >> dump-a.txt
-          echo "==== STEP-B 通知脚本 ===="
+          echo "==== STEP-B 通知脚本 ====" >> dump-a.txt
           python - <<'EOF' >> dump-a.txt 2>&1
 import json, os, datetime
 DATA = "docs/data/data.json"
@@ -69,7 +70,7 @@ json.dump({"date": today, "today_new_count": n}, open(STATE, "w", encoding="utf-
 print("已写入通知文件：", NOTIFY, "→", msg)
 EOF
           echo "B_EXIT=$?" >> dump-a.txt
-          echo "==== STEP-C git commit/push ===="
+          echo "==== STEP-C git commit/push ====" >> dump-a.txt
           git config user.name "qiuzhao-daily-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
@@ -80,12 +81,13 @@ EOF
             git push >> dump-a.txt 2>&1
           fi
           echo "C_EXIT=$?" >> dump-a.txt
-          echo "==== STEP-D purge CDN ===="
+          echo "==== STEP-D purge CDN ====" >> dump-a.txt
           for p in "docs/data/data.json" "docs/js/data.js"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" "https://purge.jsdelivr.net/gh/fengs1x/qiuzhao-daily@main/$p")
             echo "purge $p -> $code" >> dump-a.txt
           done
           echo "D_EXIT=$?" >> dump-a.txt
+          exit 0
 
       - name: 提交诊断结果回仓库
         run: |
