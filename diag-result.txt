@@ -1,0 +1,13 @@
+==== 运行时间 2026-09-02 01:33:11 UTC ====
+
+==== [1] offer.playoffer.cn ====
+HTTP 200 | 耗时 2.028637s
+<!DOCTYPE html>
+<html lang="zh-Hans" data-bs-theme="light">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scal
+
+==== [2] hahazhao.com API ====
+HTTP 200 | 耗时 1.038454s
+{"count":2777,"next":"https://hahazhao.com/v1/recruitment/?page=2&page_size=5","previous":null,"results":[{"id":3473,"user_status":{"value":null,"display":"未查看"},"user_is_favorite":false,"compan
