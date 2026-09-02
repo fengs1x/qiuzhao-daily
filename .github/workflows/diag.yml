@@ -14,25 +14,25 @@ jobs:
       - name: 检出仓库
         uses: actions/checkout@v7
 
-      - name: 测试两个数据源连通性
+      - name: 安装 Python 与 lxml
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet lxml
+
+      - name: 复现 crawl（捕获完整输出）
         run: |
           {
-            echo "==== 运行时间 $(date -u +'%Y-%m-%d %H:%M:%S') UTC ===="
-            echo ""
-            echo "==== [1] offer.playoffer.cn ===="
-            curl -s -o /dev/null -w "HTTP %{http_code} | 耗时 %{time_total}s\n" --max-time 20 -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" "https://offer.playoffer.cn/" || echo "连接失败/超时"
-            curl -s --max-time 20 -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" "https://offer.playoffer.cn/" | head -c 200
-            echo ""
-            echo ""
-            echo "==== [2] hahazhao.com API ===="
-            curl -s -o /dev/null -w "HTTP %{http_code} | 耗时 %{time_total}s\n" --max-time 20 "https://hahazhao.com/v1/recruitment/?page=1&page_size=5" || echo "连接失败/超时"
-            curl -s --max-time 20 "https://hahazhao.com/v1/recruitment/?page=1&page_size=5" | head -c 200
-          } > diag-result.txt 2>&1
+            echo "==== python $(python --version) ===="
+            echo "==== 开始复现 update_daily.py ===="
+            python crawler/update_daily.py
+            echo "==== EXIT_CODE=$? ===="
+          } > crawl-dump.txt 2>&1
 
       - name: 提交诊断结果回仓库
         run: |
           git config user.name "diag-bot"
           git config user.email "diag-bot@example.com"
-          git add diag-result.txt
-          git commit -m "diag: 连通性测试结果" || echo "无变更"
-          git push || echo "推送失败（可能是诊断触发再次 push，忽略）"
+          git add crawl-dump.txt
+          git commit -m "diag: crawl 复现输出" || echo "无变更"
+          git push || echo "推送失败（忽略）"
