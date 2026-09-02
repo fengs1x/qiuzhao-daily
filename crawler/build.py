@@ -13,6 +13,7 @@
     - 已过期（投递截止早于今天且非"招满为止"）的记录排除
     - status: 今日新增 = 更新日期==今天；否则 正在进行
     - is_26: 招聘对象包含 2026 届
+    - 两站数据合并后按公司归一化名去重（同名多公告合并为一条卡片，聚合岗位/专业/届数）
 用法：python build.py
 """
 import json
@@ -193,6 +194,79 @@ def main():
         }
         out.append(item)
         seen_names.add(normalize_name(item["name"]))
+
+    # ---------- 2.5 按公司归一化名合并去重 ----------
+    # 同一公司在 YouOffer 中常有多个公告（不同届数/不同岗位），
+    # 合并为一条卡片：聚合岗位/专业/届数/地点/截止，避免列表大量重复。
+    def merge_group(items):
+        all_pos, seen_pos = [], set()
+        all_maj, seen_maj = [], set()
+        all_loc, seen_loc = [], set()
+        all_years = set()
+        best_post, best_dl = "", ""
+        base = next((it for it in items if it.get("is_26")), items[0])
+        for it in items:
+            for p in it.get("positions") or []:
+                if p and p not in seen_pos:
+                    seen_pos.add(p)
+                    all_pos.append(p)
+            for m in it.get("majors") or []:
+                if m and m not in seen_maj:
+                    seen_maj.add(m)
+                    all_maj.append(m)
+            for l in re.split(r"[,，、\s]+", it.get("location") or ""):
+                if l and l not in seen_loc:
+                    seen_loc.add(l)
+                    all_loc.append(l)
+            for y in it.get("years") or []:
+                all_years.add(y)
+            if (it.get("post_date") or "") > best_post:
+                best_post = it["post_date"]
+            dl = it.get("deadline") or ""
+            if dl and "招满" not in dl and dl > best_dl:
+                best_dl = dl
+        m = dict(base)
+        # 合并后的显示名：优先无括号注释的原始名；全带括号则去掉括号
+        clean = None
+        for it in items:
+            if not re.search(r"[（(]", it["name"] or ""):
+                clean = it["name"]
+                break
+        if clean is None:
+            clean = re.sub(r"[（(].*?[)）]", "", items[0]["name"] or "").strip()
+        m["name"] = clean
+        m["positions"] = all_pos
+        m["majors"] = all_maj
+        m["location"] = " ".join(all_loc) if all_loc else base.get("location", "")
+        m["years"] = sorted(all_years)
+        m["is_26"] = any(it.get("is_26") for it in items)
+        m["post_date"] = best_post
+        m["deadline"] = best_dl or base.get("deadline", "")
+        m["status"] = "today_new" if best_post == today else "ongoing"
+        # 合并届数描述（如 2026届,2027届）
+        ty = set()
+        for it in items:
+            for x in re.split(r"[,，]", it.get("target_years") or ""):
+                x = x.strip()
+                if x:
+                    ty.add(x)
+        m["target_years"] = ",".join(sorted(ty))
+        # position 原始字符串更新为聚合岗位（详情回退与搜索用）
+        if all_pos:
+            m["position"] = " ".join(all_pos[:20])
+        return m
+
+    merged_out = []
+    ygroups = defaultdict(list)
+    for it in out:
+        ygroups[normalize_name(it["name"])].append(it)
+    for _, items in ygroups.items():
+        if len(items) == 1:
+            merged_out.append(items[0])
+        else:
+            merged_out.append(merge_group(items))
+    out = merged_out
+    seen_names = {normalize_name(it["name"]) for it in out}
 
     # ---------- 3. 补充 hahazhao 独有公司 ----------
     # 同一公司在 hahazhao 可能有多个年份公告，按更新时间降序处理，最新公告优先收录
