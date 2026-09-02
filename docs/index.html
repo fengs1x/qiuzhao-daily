@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -57,6 +57,12 @@
     </select>
     <select id="majorSelect" class="filter-select">
       <option value="">全部专业</option>
+    </select>
+    <select id="sortSelect" class="filter-select">
+      <option value="post_desc">最新发布</option>
+      <option value="post_asc">最早发布</option>
+      <option value="deadline">截止最近</option>
+      <option value="name">公司名</option>
     </select>
     <span class="filter-tip" id="filterTip"></span>
   </div>
@@ -118,6 +124,6 @@
   </div>
 </div>
 
-<script src="js/app.js?v=8"></script>
+<script src="js/app.js?v=9"></script>
 </body>
 </html>

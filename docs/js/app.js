@@ -6,6 +6,7 @@
   var LS_26 = "qd_switch26";
   var LS_NOTIFIED = "qd_notified_date";
   var LS_FAV = "qd_favorites";
+  var LS_SORT = "qd_sort";   // 列表排序方式（localStorage）
   var LS_SERVER = "qd_server";   // 云端后端地址（脱离电脑版）
   var DB_NAME = "qiuzhao-db";
   var STORE = "data";
@@ -26,6 +27,7 @@
     location: "",
     year: "",
     major: "",
+    sort: "post_desc", // post_desc 最新发布 | post_asc 最早发布 | deadline 截止最近 | name 公司名
     visible: RENDER_BATCH, // 已渲染条数
     filteredLen: 0         // 当前筛选结果总数
   };
@@ -404,7 +406,33 @@
         if (hay.indexOf(q) < 0) { return false; }
       }
       return true;
-    });
+    }).sort(function (a, b) { return sortCompare(a, b, state.sort); });
+  }
+
+  // ---------- 排序 ----------
+  function dlTs(d) {
+    if (!d) { return 0; }
+    var m = String(d).match(/(20\d\d)[-/.](\d{1,2})[-/.](\d{1,2})/);
+    if (!m) { return 0; }
+    return +m[1] * 10000 + +m[2] * 100 + +m[3];
+  }
+  function sortCompare(a, b, s) {
+    s = s || "post_desc";
+    var pa = a.post_date || "", pb = b.post_date || "";
+    if (s === "post_asc") {
+      return pa.localeCompare(pb) || (a.name || "").localeCompare(b.name || "", "zh");
+    }
+    if (s === "name") {
+      return (a.name || "").localeCompare(b.name || "", "zh");
+    }
+    if (s === "deadline") {
+      var da = dlTs(a.deadline), db = dlTs(b.deadline);
+      if (da && db) { return da - db; }
+      if (da) { return -1; }
+      if (db) { return 1; }
+      return pb.localeCompare(pa);
+    }
+    return pb.localeCompare(pa) || (a.name || "").localeCompare(b.name || "", "zh");
   }
 
   // ---------- 渲染 ----------
@@ -916,6 +944,11 @@
       state.major = el.majorSelect.value;
       resetView(); renderList();
     });
+    el.sortSelect.addEventListener("change", function () {
+      state.sort = el.sortSelect.value;
+      try { localStorage.setItem(LS_SORT, state.sort); } catch (e) {}
+      resetView(); renderList();
+    });
 
     document.querySelectorAll(".tab").forEach(function (t) {
       t.addEventListener("click", function () { switchTab(t.getAttribute("data-tab")); });
@@ -995,6 +1028,7 @@
     el.locSelect = $("locSelect");
     el.yearSelect = $("yearSelect");
     el.majorSelect = $("majorSelect");
+    el.sortSelect = $("sortSelect");
     el.filterTip = $("filterTip");
     el.noticeBanner = $("noticeBanner");
     el.noticeText = $("noticeText");
@@ -1023,6 +1057,8 @@
       state.only26 = localStorage.getItem(LS_26) === "1";
     } catch (e) {}
     el.switch26.checked = state.only26;
+    try { state.sort = localStorage.getItem(LS_SORT) || "post_desc"; } catch (e) {}
+    el.sortSelect.value = state.sort;
     favLoad();
     updateFavCount();
 
