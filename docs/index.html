@@ -10,7 +10,7 @@
 <title>秋招每日通</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
@@ -58,7 +58,8 @@
     <select id="majorSelect" class="filter-select">
       <option value="">全部专业</option>
     </select>
-    <select id="sortSelect" class="filter-select">
+    <span class="sort-label">排序</span>
+    <select id="sortSelect" class="filter-select sort-select">
       <option value="post_desc">最新发布</option>
       <option value="post_asc">最早发布</option>
       <option value="deadline">截止最近</option>

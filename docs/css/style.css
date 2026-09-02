@@ -164,6 +164,8 @@ body {
 }
 .filter-select:focus { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
 .filter-tip { font-size: 12px; color: var(--text-2); flex: 1; text-align: right; min-width: 80px; }
+.sort-label { font-size: 12px; color: var(--brand); font-weight: 600; white-space: nowrap; }
+.sort-select { border-color: var(--brand); color: var(--brand); font-weight: 500; }
 
 /* ===== 通知横幅 ===== */
 .notice-banner {
