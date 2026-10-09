@@ -13,7 +13,8 @@
     - 已过期（投递截止早于今天且非"招满为止"）的记录排除
     - status: 今日新增 = 更新日期==今天；否则 正在进行
     - is_26: 招聘对象包含 2026 届
-    - 两站数据合并后按公司归一化名去重（同名多公告合并为一条卡片，聚合岗位/专业/届数）
+    - edu_req/is_college: 从岗位/公告文本推导学历要求（宽松口径：未明确"本科及以上"要求的记录视为专科可报）
+    - 两站数据合并后按公司归一化名去重（同名多公告合并为一条卡片，聚合岗位/专业/届数/学历）
 用法：python build.py
 """
 import json
@@ -101,6 +102,39 @@ def is_placeholder_date(d):
     return False
 
 
+# ---------- 学历要求推导（宽松口径：未明确"本科及以上"要求的视为专科可报） ----------
+# 强信号：明确的"本科及以上/硕士/博士"等学历要求句式（排除岗位名里混入的"硕士顾问/博士后研究员"等词）
+BACHELOR_PLUS_RE = re.compile(
+    r"本科及以上|本科以上|本科起|本科学历|本科及本科以上|本科或以上|本科及硕士|"
+    r"硕士研究生及以上|硕士及以上|硕士以上|硕士学历|"
+    r"博士研究生及以上|博士及以上|博士学历|"
+    r"研究生学历|全日制.{0,4}(本科|硕士|博士)(?:学历|以上|及以上)|"
+    r"(本科|硕士|博士)(?:及以上|以上|学历)"
+)
+COLLEGE_RE = re.compile(r"专科|大专|高职|职业技术|高等职业")
+
+
+def parse_edu(text):
+    """从岗位/公告文本推导学历要求。
+    返回 (edu_req, is_college)：
+    - edu_req 取值：专科及以上 / 本科及以上 / 硕士及以上 / 博士及以上 / 不限
+    - is_college：宽松口径 = 未明确要求本科及以上的记录视为专科可报；
+      明确提到"专科/大专/高职"的记录（即使同时提到本科及以上）视为专科可报。
+    """
+    if not text:
+        return "不限", True
+    if COLLEGE_RE.search(text):
+        # 明确提到专科/大专/高职 → 有专科岗位，专科可报（如"本科及以上毕业生和主专业高职大专生"）
+        return "专科及以上", True
+    if BACHELOR_PLUS_RE.search(text):
+        if re.search(r"博士研究生|博士及以上|博士学历", text):
+            return "博士及以上", False
+        if re.search(r"硕士研究生|硕士及以上|硕士以上|硕士学历", text):
+            return "硕士及以上", False
+        return "本科及以上", False
+    return "不限", True
+
+
 def main():
     today = time.strftime("%Y-%m-%d")
     print("今天:", today)
@@ -170,6 +204,7 @@ def main():
         years = parse_years(rec.get("target_years", ""))
         is26 = "2026" in years
         positions, majors = split_positions(rec.get("position", ""))
+        edu_req, is_college = parse_edu(rec.get("position", "") + " " + rec.get("name", ""))
         item = {
             "id": rec.get("id") or rec.get("name"),
             "source": "youoffer",
@@ -186,6 +221,8 @@ def main():
             "target_years": rec.get("target_years", ""),
             "years": sorted(years),
             "is_26": is26,
+            "edu_req": edu_req,
+            "is_college": is_college,
             "post_date": post_date,
             "deadline": rec.get("deadline", ""),
             "apply_url": rec.get("apply_url", ""),
@@ -240,6 +277,14 @@ def main():
         m["location"] = " ".join(all_loc) if all_loc else base.get("location", "")
         m["years"] = sorted(all_years)
         m["is_26"] = any(it.get("is_26") for it in items)
+        # 学历聚合（宽松口径：任一记录未明确本科及以上 → 公司专科可报）
+        edu_reqs = [it.get("edu_req") for it in items if it.get("edu_req")]
+        m["is_college"] = any(it.get("is_college") for it in items)
+        if m["is_college"]:
+            m["edu_req"] = "专科及以上" if any("专科" in (e or "") for e in edu_reqs) else "不限"
+        else:
+            _order = {"本科及以上": 1, "硕士及以上": 2, "博士及以上": 3}
+            m["edu_req"] = max(edu_reqs, key=lambda e: _order.get(e, 0)) if edu_reqs else "不限"
         m["post_date"] = best_post
         m["deadline"] = best_dl or base.get("deadline", "")
         m["status"] = "today_new" if best_post == today else "ongoing"
@@ -295,6 +340,7 @@ def main():
             continue
         years = parse_years(h.get("recruit_target", ""))
         is26 = "2026" in years
+        edu_req, is_college = parse_edu(h.get("title", "") + " " + name)
         item = {
             "id": "h_" + str(h.get("id")),
             "source": "hahazhao",
@@ -311,6 +357,8 @@ def main():
             "target_years": h.get("recruit_target", ""),
             "years": sorted(years),
             "is_26": is26,
+            "edu_req": edu_req,
+            "is_college": is_college,
             "post_date": post_date,
             "deadline": h.get("deadline", ""),
             "apply_url": h.get("apply_link", ""),
@@ -326,6 +374,8 @@ def main():
     today_new = [c for c in out if c["status"] == "today_new"]
     ongoing = [c for c in out if c["status"] == "ongoing"]
     today_new_26 = [c for c in today_new if c["is_26"]]
+    today_new_college = [c for c in today_new if c["is_college"]]
+    total_college = [c for c in out if c["is_college"]]
 
     industries = sorted({c["industry"] for c in out if c["industry"]})
 
@@ -337,6 +387,8 @@ def main():
         "total": len(out),
         "today_new": len(today_new),
         "today_new_26": len(today_new_26),
+        "today_new_college": len(today_new_college),
+        "total_college": len(total_college),
         "ongoing": len(ongoing),
         "industries": industries,
         "sources": {
