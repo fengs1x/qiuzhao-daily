@@ -338,6 +338,11 @@ body {
   color: #fff;
   box-shadow: 0 1px 4px rgba(0,168,200,.4);
 }
+.badge-college {
+  background: #FCE8D5;
+  color: #B26A1B;
+  border: 1px solid rgba(178,106,27,.35);
+}
 
 .card-rows { display: flex; flex-direction: column; gap: 5px; }
 .card-row { display: flex; font-size: 13px; gap: 6px; }
@@ -422,6 +427,7 @@ body {
 }
 
 .highlight26 { color: var(--brand-deep); font-weight: 800; }
+.highlight-college { color: #B26A1B; font-weight: 800; }
 
 /* ===== 设置弹窗 ===== */
 .modal {
