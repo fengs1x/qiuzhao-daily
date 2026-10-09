@@ -18,6 +18,7 @@
 用法：python build.py
 """
 import json
+import calendar
 import os
 import re
 import sys
@@ -90,11 +91,18 @@ def is_expired(deadline, today, post_date=""):
             due = date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
         else:
             short = re.search(r"(?<!\d)(\d{1,2})[-/.月](\d{1,2})(?:日)?(?!\d)", deadline)
-            if not short:
-                return False
-            month, day = int(short.group(1)), int(short.group(2))
+            if short:
+                month, day = int(short.group(1)), int(short.group(2))
+            else:
+                month_only = re.search(r"(?<!\d)(?:(20\d\d)年)?(\d{1,2})月(?:底|末)?(?!\d)", deadline)
+                if not month_only:
+                    return False
+                month = int(month_only.group(2))
+                day = 0
             published = date.fromisoformat(post_date) if post_date else date.fromisoformat(today)
-            year = published.year + (published.month >= 10 and month <= 3)
+            year = int(month_only.group(1)) if not short and month_only.group(1) else published.year + (published.month >= 10 and month <= 3)
+            if day == 0:
+                day = calendar.monthrange(year, month)[1]
             due = date(year, month, day)
     except ValueError:
         return False
