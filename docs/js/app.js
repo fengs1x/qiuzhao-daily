@@ -636,7 +636,7 @@
     if (c.is_college) {
       var bc = document.createElement("span");
       bc.className = "badge badge-college";
-      bc.textContent = "专科可报";
+      bc.textContent = c.edu_req === "专科及以上" ? "专科可报" : "学历待核实";
       tags.appendChild(bc);
     }
     card.appendChild(head);
@@ -729,7 +729,7 @@
     }
     var parts = [];
     if (state.only26) { parts.push("仅26届"); }
-    if (state.onlyCollege) { parts.push("仅专科可报"); }
+    if (state.onlyCollege) { parts.push("专科可报及学历待核实"); }
     if (state.industry) { parts.push(state.industry); }
     if (state.companyType) { parts.push(state.companyType); }
     if (state.location) { parts.push(state.location); }
@@ -807,7 +807,8 @@
     }
     if (c.is_college) {
       var bcol = document.createElement("span");
-      bcol.className = "badge badge-college"; bcol.textContent = "专科可报";
+      bcol.className = "badge badge-college";
+      bcol.textContent = c.edu_req === "专科及以上" ? "专科可报" : "学历待核实";
       sub.appendChild(bcol);
     }
     headCard.appendChild(sub);
@@ -875,7 +876,7 @@
 
   function eduLabel(c) {
     if (c.is_college) {
-      return c.edu_req === "专科及以上" ? "专科及以上 · 专科可报" : "学历不限 · 专科可报";
+      return c.edu_req === "专科及以上" ? "专科及以上 · 专科可报" : "未注明学历要求 · 投递前核实";
     }
     return c.edu_req || "本科及以上";
   }
