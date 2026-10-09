@@ -81,17 +81,24 @@ def split_positions(p):
     return pos, []
 
 
-def is_expired(deadline, today):
+def is_expired(deadline, today, post_date=""):
     if not deadline or "招满" in deadline or "为止" in deadline:
         return False
     m = re.search(r"(20\d\d)[-/.年](\d{1,2})[-/.月](\d{1,2})", deadline)
-    if not m:
-        return False
     try:
-        d = "%s-%02d-%02d" % (m.group(1), int(m.group(2)), int(m.group(3)))
+        if m:
+            due = date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+        else:
+            short = re.search(r"(?<!\d)(\d{1,2})[-/.月](\d{1,2})(?:日)?(?!\d)", deadline)
+            if not short:
+                return False
+            month, day = int(short.group(1)), int(short.group(2))
+            published = date.fromisoformat(post_date) if post_date else date.fromisoformat(today)
+            year = published.year + (published.month >= 10 and month <= 3)
+            due = date(year, month, day)
     except ValueError:
         return False
-    return d < today
+    return due < date.fromisoformat(today)
 
 
 def is_stale(post_date, deadline, today, max_age_days=180):
@@ -240,7 +247,7 @@ def main():
         n0 = normalize_name(rec.get("name", ""))
         if n0 in haz_latest and haz_latest[n0] > post_date:
             post_date = haz_latest[n0]
-        if is_expired(rec.get("deadline", ""), today):
+        if is_expired(rec.get("deadline", ""), today, post_date):
             continue
         if is_stale(post_date, rec.get("deadline", ""), today):
             continue
@@ -379,7 +386,7 @@ def main():
             post_date = upd
         else:
             post_date = pub if (re.match(r"^\d{4}-\d{2}-\d{2}$", pub) and not is_placeholder_date(pub)) else ""
-        if is_expired(h.get("deadline", ""), today):
+        if is_expired(h.get("deadline", ""), today, post_date):
             continue
         if is_stale(post_date, h.get("deadline", ""), today):
             continue
