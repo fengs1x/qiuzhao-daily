@@ -4,6 +4,7 @@
 
   // ---------- 常量与状态 ----------
   var LS_26 = "qd_switch26";
+  var LS_COLLEGE = "qd_switch_college";   // 专科可报筛选开关（localStorage）
   var LS_NOTIFIED = "qd_notified_date";
   var LS_FAV = "qd_favorites";
   var LS_SORT = "qd_sort";   // 列表排序方式（localStorage）
@@ -21,6 +22,7 @@
     data: null,           // { meta, companies }
     tab: "today_new",     // today_new | ongoing | favorites
     only26: false,
+    onlyCollege: false,
     search: "",
     industry: "",
     companyType: "",
@@ -387,6 +389,7 @@
     return source.filter(function (c) {
       if (state.tab !== "favorites" && c.status !== state.tab) { return false; }
       if (state.only26 && !c.is_26) { return false; }
+      if (state.onlyCollege && !c.is_college) { return false; }
       if (state.industry && c.industry !== state.industry) { return false; }
       if (state.companyType && typeBucket(c.company_type) !== state.companyType) { return false; }
       if (state.location && locTokens(c.location).indexOf(state.location) < 0) { return false; }
@@ -395,7 +398,15 @@
         var hasMaj = (c.majors || []).some(function (m) { return !/不限/.test(m || "") && (m || "").trim(); });
         if (hasMaj) { return false; }
       } else if (state.major) {
-        var majHit = companyMajorText(c).indexOf(state.major.toLowerCase()) >= 0;
+        var majHit = false;
+        var alias = MAJOR_ALIAS[state.major];
+        if (alias) {
+          for (var ai = 0; ai < alias.length; ai++) {
+            if (companyMajorText(c).indexOf(alias[ai]) >= 0) { majHit = true; break; }
+          }
+        } else {
+          majHit = companyMajorText(c).indexOf(state.major.toLowerCase()) >= 0;
+        }
         if (!majHit) { return false; }
       }
       if (state.search) {
@@ -538,7 +549,12 @@
     "机械", "电气", "材料", "化学", "生物", "物理", "数学", "统计学",
     "金融", "会计", "经济学", "市场营销", "工商管理", "人力资源", "物流",
     "土木", "建筑", "法学", "教育", "心理学", "医学", "药学", "护理",
-    "英语", "环境", "能源"];
+    "英语", "环境", "能源",
+    "铁道交通运营管理", "铁道运输", "铁道机车车辆", "铁道信号", "铁道工程", "轨道交通", "铁路"];
+  // "铁道交通运营管理"相关词集：选中该项时按相关词匹配（铁道/轨道/铁路/机车；不含宽泛的"车辆/信号"避免误伤）
+  var MAJOR_ALIAS = {
+    "铁道交通运营管理": ["铁道", "轨道", "铁路", "机车"]
+  };
 
   function companyMajorText(c) {
     return (((c.majors || []).join(" ") + " " + (c.position || "") + " " + (c.title || ""))).toLowerCase();
@@ -556,6 +572,8 @@
     });
     var picks = MAJOR_PRESETS.filter(function (w) { return cnt[w] > 0; })
       .sort(function (a, b) { return cnt[b] - cnt[a]; });
+    // 用户点名的"铁道交通运营管理"即使字面词频为 0 也强制显示（按相关词匹配）
+    if (picks.indexOf("铁道交通运营管理") < 0) { picks.push("铁道交通运营管理"); }
     sel.innerHTML = "";
     var all = document.createElement("option");
     all.value = ""; all.textContent = "全部专业";
@@ -611,6 +629,12 @@
       b26.className = "badge badge-26";
       b26.textContent = "26届";
       tags.appendChild(b26);
+    }
+    if (c.is_college) {
+      var bc = document.createElement("span");
+      bc.className = "badge badge-college";
+      bc.textContent = "专科可报";
+      tags.appendChild(bc);
     }
     card.appendChild(head);
     card.appendChild(tags);
@@ -702,6 +726,7 @@
     }
     var parts = [];
     if (state.only26) { parts.push("仅26届"); }
+    if (state.onlyCollege) { parts.push("仅专科可报"); }
     if (state.industry) { parts.push(state.industry); }
     if (state.companyType) { parts.push(state.companyType); }
     if (state.location) { parts.push(state.location); }
@@ -777,6 +802,11 @@
       b26.className = "badge badge-26"; b26.textContent = "26届可投";
       sub.appendChild(b26);
     }
+    if (c.is_college) {
+      var bcol = document.createElement("span");
+      bcol.className = "badge badge-college"; bcol.textContent = "专科可报";
+      sub.appendChild(bcol);
+    }
     headCard.appendChild(sub);
     body.appendChild(headCard);
 
@@ -784,6 +814,7 @@
     var info = document.createElement("div");
     info.className = "detail-card";
     info.appendChild(field("目标届数", c.target_years || "--", c.is_26));
+    info.appendChild(field("学历要求", eduLabel(c), c.is_college, "highlight-college"));
     info.appendChild(field("状态", c.status === "today_new" ? "今日新增" : "正在进行", false));
     info.appendChild(field("更新日期", c.post_date || "--", false));
     info.appendChild(field("投递截止", c.deadline || "--", false));
@@ -823,20 +854,27 @@
     el.detailView.scrollTop = 0;
   }
 
-  function field(k, v, highlight) {
+  function field(k, v, highlight, hlClass) {
     var f = document.createElement("div");
     f.className = "detail-field";
     var kk = document.createElement("span");
     kk.className = "k"; kk.textContent = k;
     var vv = document.createElement("span");
-    vv.className = "v" + (highlight ? " highlight26" : "");
-    if (highlight) {
+    vv.className = "v" + (highlight ? " " + (hlClass || "highlight26") : "");
+    if (highlight && (hlClass || "highlight26") === "highlight26") {
       vv.innerHTML = escHtml(v).replace(/26\s*届/g, '<span class="highlight26">26届</span>');
     } else {
       vv.textContent = v;
     }
     f.appendChild(kk); f.appendChild(vv);
     return f;
+  }
+
+  function eduLabel(c) {
+    if (c.is_college) {
+      return c.edu_req === "专科及以上" ? "专科及以上 · 专科可报" : "学历不限 · 专科可报";
+    }
+    return c.edu_req || "本科及以上";
   }
 
   function closeDetail() {
@@ -909,6 +947,13 @@
     el.switch26.addEventListener("change", function () {
       state.only26 = el.switch26.checked;
       try { localStorage.setItem(LS_26, state.only26 ? "1" : "0"); } catch (e) {}
+      resetView();
+      renderList();
+    });
+
+    el.switchCollege.addEventListener("change", function () {
+      state.onlyCollege = el.switchCollege.checked;
+      try { localStorage.setItem(LS_COLLEGE, state.onlyCollege ? "1" : "0"); } catch (e) {}
       resetView();
       renderList();
     });
@@ -1022,6 +1067,7 @@
     el.todayLabel = $("todayLabel");
     el.refreshBtn = $("refreshBtn");
     el.switch26 = $("switch26");
+    el.switchCollege = $("switchCollege");
     el.searchInput = $("searchInput");
     el.industrySelect = $("industrySelect");
     el.typeSelect = $("typeSelect");
@@ -1055,8 +1101,10 @@
 
     try {
       state.only26 = localStorage.getItem(LS_26) === "1";
+      state.onlyCollege = localStorage.getItem(LS_COLLEGE) === "1";
     } catch (e) {}
     el.switch26.checked = state.only26;
+    el.switchCollege.checked = state.onlyCollege;
     try { state.sort = localStorage.getItem(LS_SORT) || "post_desc"; } catch (e) {}
     el.sortSelect.value = state.sort;
     favLoad();
