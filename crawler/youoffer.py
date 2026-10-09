@@ -7,7 +7,7 @@ YouOffer (offer.playoff.cn) 秋招/校招信息爬虫
 
 用法：
   python youoffer.py --full     # 全量抓取所有页（首次使用）
-  python youoffer.py --daily    # 只抓前 3 页（每日增量，今日新增基本都在前 1~2 页）
+  python youoffer.py --daily    # 前 5 页增量 + 最多 3 页历史空缺补抓
   python youoffer.py --pages 5  # 抓前 5 页
 """
 import argparse
@@ -133,7 +133,7 @@ def save_store(store):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--full", action="store_true", help="全量抓取")
-    ap.add_argument("--daily", action="store_true", help="增量抓取前 3 页")
+    ap.add_argument("--daily", action="store_true", help="增量抓取前 5 页，并逐步补齐未抓历史页")
     ap.add_argument("--pages", type=int, default=0, help="自定义抓取页数")
     args = ap.parse_args()
 
@@ -150,7 +150,11 @@ def main():
     if args.full:
         page_range = list(range(1, total + 1))
     elif args.daily:
-        page_range = list(range(1, 6))  # 今日新增基本集中在前 5 页
+        page_range = list(range(1, min(5, total) + 1))  # 今日新增基本集中在前 5 页
+        missing_pages = [p for p in range(6, total + 1) if p not in pages_done]
+        page_range += missing_pages[:3]
+        if missing_pages:
+            print("    历史缺页 %d 页，本次补抓 %d 页" % (len(missing_pages), min(3, len(missing_pages))))
     elif args.pages:
         page_range = list(range(1, min(args.pages, total) + 1))
     else:
@@ -167,6 +171,8 @@ def main():
             print("[%d/%d] 抓取第 %d 页 ..." % (idx, len(page_range), pno))
             html_text = fetch(BASE + "?paged=%d" % pno)
         recs = parse_page(html_text)
+        if not recs or (total > 2 and len(recs) < 5):
+            raise RuntimeError("第 %d 页仅解析到 %d 条；页面结构可能变化，停止更新缓存" % (pno, len(recs)))
         new_cnt = 0
         for r in recs:
             rid = _record_id("youoffer", r["name"], r["post_date"], r["apply_url"], r["deadline"])

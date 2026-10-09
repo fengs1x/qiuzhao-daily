@@ -72,7 +72,9 @@ def main():
     first = fetch(API + "?page=1&page_size=%d" % PAGE_SIZE, use_gzip=False,
                   accept="application/json, text/html,*/*")
     data = json.loads(first)
-    count = data.get("count", 0)
+    count = data.get("count")
+    if not isinstance(count, int) or count <= 0:
+        raise RuntimeError("API 缺少有效 count；返回结构可能变化，停止更新缓存")
     total_pages = max(1, -(-count // PAGE_SIZE))
     print("共 %d 条，%d 页" % (count, total_pages))
 
@@ -88,15 +90,21 @@ def main():
             text = fetch(API + "?page=%d&page_size=%d" % (pno, PAGE_SIZE), use_gzip=False,
                          accept="application/json, text/html,*/*")
         data = json.loads(text)
-        recs = data.get("results", [])
+        recs = data.get("results")
+        if not isinstance(recs, list) or not recs or (count > PAGE_SIZE and len(recs) < 10):
+            raise RuntimeError("第 %d 页 results 数量异常；API 结构可能变化，停止更新缓存" % pno)
         new_cnt = 0
+        valid_cnt = 0
         for r in recs:
             n = normalize(r)
             if not n["name"]:
                 continue
+            valid_cnt += 1
             if n["id"] not in companies:
                 new_cnt += 1
             companies[n["id"]] = n
+        if not valid_cnt:
+            raise RuntimeError("第 %d 页没有有效公司名；停止更新缓存" % pno)
         store["last_run"] = time.strftime("%Y-%m-%d %H:%M:%S")
         save_store(store)
         print("    第 %d 页：解析 %d 条，新增 %d 条，累计 %d 条" % (pno, len(recs), new_cnt, len(companies)))

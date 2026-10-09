@@ -22,6 +22,9 @@ import os
 import re
 import sys
 import time
+from datetime import date, datetime
+from urllib.parse import urlsplit
+from zoneinfo import ZoneInfo
 from collections import Counter, defaultdict
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -91,6 +94,43 @@ def is_expired(deadline, today):
     return d < today
 
 
+def is_stale(post_date, deadline, today, max_age_days=180):
+    """没有明确未来截止日且长期未更新的公告，不再作为正在进行展示。"""
+    if not post_date:
+        return True
+    try:
+        age = (date.fromisoformat(today) - date.fromisoformat(post_date)).days
+    except ValueError:
+        return True
+    if age < 0:
+        return True
+    if age <= max_age_days:
+        return False
+    m = re.search(r"(20\d\d)[-/.年](\d{1,2})[-/.月](\d{1,2})", deadline or "")
+    if m:
+        try:
+            return date(int(m.group(1)), int(m.group(2)), int(m.group(3))) < date.fromisoformat(today)
+        except ValueError:
+            pass
+    return True
+
+
+def clean_url(value):
+    """只保留可打开的 HTTP(S) 链接，避免源站脏字段变成错误投递地址。"""
+    value = (value or "").strip()
+    if not value or any(c.isspace() for c in value):
+        return ""
+    try:
+        url = urlsplit(value)
+        host = url.hostname or ""
+        host.encode("idna").decode("ascii")
+    except (ValueError, UnicodeError):
+        return ""
+    if url.scheme not in ("http", "https") or not host or "." not in host or url.username or url.password:
+        return ""
+    return value
+
+
 def is_placeholder_date(d):
     """判断是否为源站占位日期（如 2026-12-31 / 2099-01-01），占位视为无效。"""
     if not d:
@@ -136,7 +176,8 @@ def parse_edu(text):
 
 
 def main():
-    today = time.strftime("%Y-%m-%d")
+    now_bj = datetime.now(ZoneInfo("Asia/Shanghai"))
+    today = now_bj.date().isoformat()
     print("今天:", today)
 
     ystore = load_json(os.path.join(DATA_DIR, "youoffer_store.json"))
@@ -201,6 +242,8 @@ def main():
             post_date = haz_latest[n0]
         if is_expired(rec.get("deadline", ""), today):
             continue
+        if is_stale(post_date, rec.get("deadline", ""), today):
+            continue
         years = parse_years(rec.get("target_years", ""))
         is26 = "2026" in years
         positions, majors = split_positions(rec.get("position", ""))
@@ -225,8 +268,8 @@ def main():
             "is_college": is_college,
             "post_date": post_date,
             "deadline": rec.get("deadline", ""),
-            "apply_url": rec.get("apply_url", ""),
-            "notice_url": rec.get("notice_url", ""),
+            "apply_url": clean_url(rec.get("apply_url")) or clean_url(rec.get("notice_url")),
+            "notice_url": clean_url(rec.get("notice_url")),
             "status": "today_new" if post_date == today else "ongoing",
         }
         out.append(item)
@@ -338,6 +381,8 @@ def main():
             post_date = pub if (re.match(r"^\d{4}-\d{2}-\d{2}$", pub) and not is_placeholder_date(pub)) else ""
         if is_expired(h.get("deadline", ""), today):
             continue
+        if is_stale(post_date, h.get("deadline", ""), today):
+            continue
         years = parse_years(h.get("recruit_target", ""))
         is26 = "2026" in years
         edu_req, is_college = parse_edu(h.get("title", "") + " " + name)
@@ -361,8 +406,8 @@ def main():
             "is_college": is_college,
             "post_date": post_date,
             "deadline": h.get("deadline", ""),
-            "apply_url": h.get("apply_link", ""),
-            "notice_url": h.get("original_link", ""),
+            "apply_url": clean_url(h.get("apply_link")) or clean_url(h.get("original_link")),
+            "notice_url": clean_url(h.get("original_link")),
             "status": "today_new" if post_date == today else "ongoing",
         }
         out.append(item)
@@ -382,7 +427,7 @@ def main():
     meta = {
         "app": "秋招每日通",
         "version": 1,
-        "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "generated_at": now_bj.strftime("%Y-%m-%d %H:%M:%S"),
         "today": today,
         "total": len(out),
         "today_new": len(today_new),

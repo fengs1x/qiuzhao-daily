@@ -58,7 +58,7 @@ jobs:
           fi
           git commit -m "chore: 数据更新 $(date -u +'%Y-%m-%d %H:%M') UTC"
           for i in 1 2 3 4 5; do
-            if git push; then
+            if git push origin HEAD:main; then
               echo "推送成功"
               exit 0
             fi
@@ -68,10 +68,9 @@ jobs:
             if git rebase origin/main; then
               echo "rebase 完成"
             else
-              echo "rebase 冲突，采用远端最新数据（并发任务已推送过）"
-              git reset --hard origin/main
-              git add -A
-              git commit -m "chore: 数据同步 $(date -u +'%Y-%m-%d %H:%M') UTC" --allow-empty
+              echo "rebase 冲突，保留失败状态以便检查，避免静默丢失本次数据"
+              git rebase --abort || true
+              exit 1
             fi
           done
           echo "连续 5 次推送失败"
