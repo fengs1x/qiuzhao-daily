@@ -568,7 +568,10 @@
     MAJOR_PRESETS.forEach(function (w) { cnt[w] = 0; });
     state.data.companies.forEach(function (c) {
       var t = companyMajorText(c);
-      MAJOR_PRESETS.forEach(function (w) { if (t.indexOf(w) >= 0) { cnt[w]++; } });
+      MAJOR_PRESETS.forEach(function (w) {
+        var terms = MAJOR_ALIAS[w] || [w];
+        if (terms.some(function (term) { return t.indexOf(term.toLowerCase()) >= 0; })) { cnt[w]++; }
+      });
     });
     var picks = MAJOR_PRESETS.filter(function (w) { return cnt[w] > 0; })
       .sort(function (a, b) { return cnt[b] - cnt[a]; });

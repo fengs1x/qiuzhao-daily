@@ -1,5 +1,5 @@
 ﻿/* 秋招每日通 - Service Worker：应用外壳与数据离线缓存 */
-var CACHE = "qiuzhao-v19";
+var CACHE = "qiuzhao-v21";
 var SHELL = [
   "./",
   "./index.html",
@@ -22,13 +22,14 @@ self.addEventListener("install", function (e) {
 self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keys) {
-      return Promise.all(keys.filter(function (k) { return k !== CACHE; }).map(function (k) { return caches.delete(k); }));
+      return Promise.all(keys.filter(function (k) { return /^qiuzhao-v\d+$/.test(k) && k !== CACHE; }).map(function (k) { return caches.delete(k); }));
     }).then(function () { return self.clients.claim(); })
   );
 });
 
 self.addEventListener("fetch", function (e) {
   var url = e.request.url;
+  if (new URL(url).pathname.indexOf("/classic/") >= 0) { return; }
 
   // 刷新/抓取接口：始终直连网络，绝不缓存（避免轮询拿到旧状态）
   if (url.indexOf("/refresh") >= 0) {

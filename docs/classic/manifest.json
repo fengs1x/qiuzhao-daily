@@ -1,0 +1,26 @@
+{
+  "name": "秋招每日通 · 经典版",
+  "short_name": "秋招经典版",
+  "description": "秋招每日通经典版：保留原有筛选界面，使用最新招聘数据。",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F5F6F7",
+  "theme_color": "#00A8C8",
+  "icons": [
+    {
+      "src": "../icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
