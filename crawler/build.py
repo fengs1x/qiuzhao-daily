@@ -433,6 +433,9 @@ def main():
     # ---------- 3.5 高校就业中心独有公告 ----------
     for h in sorted(edu_companies.values(), key=lambda x: x.get("post_date", ""), reverse=True):
         name = h.get("name", "")
+        # 该条为第三方内推帖，页面登记公司与实际招聘品牌不一致，不能作为该公司校招展示。
+        if "易招招" in name and "内推码" in h.get("description", ""):
+            continue
         n = normalize_name(name)
         if not n or n in seen_names:
             continue
