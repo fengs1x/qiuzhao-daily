@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T15:15:32+08:00",
+  "generated_at": "2026-10-10T16:16:57+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 47,
+  "count": 48,
   "events": [
     {
       "id": "5371",
@@ -258,6 +258,13 @@
       "event_at": "2026-10-19T18:40",
       "place": "北辰校区教学楼12-A103",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5220.html"
+    },
+    {
+      "id": "5436",
+      "title": "中国邮政集团有限公司河北省分公司 2027年度秋季校园招聘",
+      "event_at": "2026-10-20T14:30",
+      "place": "北辰校区图书馆第三会议室",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5436.html"
     },
     {
       "id": "5183",
