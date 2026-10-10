@@ -198,6 +198,7 @@ def main():
     ystore = load_json(os.path.join(DATA_DIR, "youoffer_store.json"))
     hstore = load_json(os.path.join(DATA_DIR, "hahazhao_store.json"))
     estore = load_json(os.path.join(DATA_DIR, "hebut_store.json"))
+    tstore = load_json(os.path.join(DATA_DIR, "tencent_store.json"))
     if not ystore:
         print("缺少 youoffer_store.json，请先运行 youoffer.py")
         sys.exit(1)
@@ -205,6 +206,7 @@ def main():
     you_companies = ystore.get("companies", {})
     haz_companies = (hstore or {}).get("companies", {})
     edu_companies = (estore or {}).get("companies", {})
+    tencent_positions = (tstore or {}).get("positions", {})
 
     # ---------- 1. 行业映射（hahazhao 公司名 -> 最常见行业） ----------
     ind_map = defaultdict(Counter)
@@ -473,6 +475,29 @@ def main():
         })
         seen_names.add(n)
 
+    # ---------- 3.6 企业官网岗位：按公司聚合，未提供发布日期时不标成今日新增 ----------
+    if tencent_positions:
+        positions = sorted(tencent_positions.values(), key=lambda x: x.get("title", ""))
+        titles = list(dict.fromkeys(p.get("title", "") for p in positions if p.get("title")))
+        locations = list(dict.fromkeys(p.get("location", "") for p in positions if p.get("location")))
+        first_seen = min((p.get("first_seen", today) for p in positions), default=today)
+        url = clean_url(positions[0].get("url", "")) if positions else ""
+        existing_tencent = next((it for it in out if normalize_name(it.get("name", "")) == "腾讯"), None)
+        if existing_tencent and titles:
+            existing_tencent["positions"] = list(dict.fromkeys(existing_tencent.get("positions", []) + titles))[:100]
+            existing_tencent["official_jobs_url"] = "https://join.qq.com/post.html"
+        elif url and titles:
+            out.append({
+                "id": "tencent_campus", "source": "tencent", "name": "腾讯",
+                "industry": "互联网/IT", "company_type": "民企",
+                "location": "、".join(locations[:10]), "position": "、".join(titles[:12]),
+                "positions": titles[:100], "majors": [], "title": "腾讯校招官网岗位",
+                "scale": "", "recruit_type": "校园招聘", "target_years": "",
+                "years": [], "is_26": False, "edu_req": "学历待核实", "is_college": False,
+                "post_date": first_seen, "deadline": "", "apply_url": url,
+                "notice_url": "https://join.qq.com/post.html", "status": "ongoing",
+            })
+
     # ---------- 4. 排序：今日新增按日期降序；正在进行也按更新时间降序 ----------
     out.sort(key=lambda x: (x["post_date"], x["name"]), reverse=True)
 
@@ -500,6 +525,7 @@ def main():
             "youoffer": len(you_companies),
             "hahazhao": len(haz_companies),
             "hebut": len(edu_companies),
+            "tencent": len(tencent_positions),
         },
     }
 

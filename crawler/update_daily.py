@@ -24,6 +24,8 @@ def main():
         ("youoffer.py", ("--daily",)),        # 抓取 YouOffer 前 5 页（今日新增/最新更新）
         ("hahazhao.py", ("--pages", "5")),    # 抓取今日校招前 5 页
         ("hebut.py", ("--pages", "3")),         # 高校就业中心公开校招公告
+        ("tencent.py", ()),                     # 企业官网公开校招岗位
+        ("hebut_events.py", ()),                # 校园宣讲会日历，单独输出活动数据
     ):
         rc = run(name, *args)
         if rc == 0:

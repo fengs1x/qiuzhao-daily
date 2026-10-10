@@ -38,8 +38,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: 安装 lxml（youoffer 解析依赖）
-        run: pip install --quiet lxml
+      - name: 安装抓取解析依赖
+        run: pip install --quiet lxml pypdf
 
       - name: 运行每日抓取 + 数据构建
         run: python crawler/update_daily.py
