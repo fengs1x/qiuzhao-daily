@@ -10,7 +10,7 @@
 <title>秋招每日通</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
 
@@ -51,6 +51,13 @@
     </div>
   </div>
   <div class="filter-row2">
+    <select id="sourceSelect" class="filter-select" aria-label="信息来源">
+      <option value="">全部来源</option>
+      <option value="youoffer">Offer 派</option>
+      <option value="hahazhao">今日校招</option>
+      <option value="hebut">河北工大就业中心</option>
+      <option value="tencent">腾讯校招官网</option>
+    </select>
     <select id="industrySelect" class="filter-select">
       <option value="">全部行业</option>
     </select>
@@ -88,6 +95,7 @@
   <button class="tab active" data-tab="today_new">今日新增 <span class="tab-count" id="countToday">0</span></button>
   <button class="tab" data-tab="ongoing">正在进行 <span class="tab-count" id="countOngoing">0</span></button>
   <button class="tab" data-tab="favorites">我的收藏 <span class="tab-count" id="countFav">0</span></button>
+  <button class="tab" data-tab="events">宣讲活动 <span class="tab-count" id="countEvents">0</span></button>
 </nav>
 
 <!-- ========== 列表 ========== -->
@@ -133,6 +141,6 @@
   </div>
 </div>
 
-<script src="js/app.js?v=12"></script>
+<script src="js/app.js?v=13"></script>
 </body>
 </html>

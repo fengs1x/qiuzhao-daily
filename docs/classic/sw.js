@@ -1,5 +1,5 @@
 ﻿/* 秋招每日通 - Service Worker：应用外壳与数据离线缓存 */
-var CACHE = "qiuzhao-classic-v1";
+var CACHE = "qiuzhao-classic-v2";
 var SHELL = [
   "./",
   "./index.html",

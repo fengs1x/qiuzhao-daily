@@ -498,3 +498,13 @@ body {
 @keyframes swipeRightIn { from { opacity: .5; transform: translateX(-26px); } to { opacity: 1; transform: none; } }
 .list-view.swipe-left { animation: swipeLeftIn .22s ease; }
 .list-view.swipe-right { animation: swipeRightIn .22s ease; }
+
+/* 来源筛选与宣讲活动 */
+.badge-source { background: #EAF4F7; color: #276576; }
+.events-mode .filter-row2, .events-mode .switch-wrap { display: none; }
+.events-note { color: var(--text-2); font-size: 12px; line-height: 1.5; padding: 3px 2px 12px; }
+.event-card { cursor: default; }
+.event-card .card-name { display: block; margin-bottom: 8px; }
+.event-link { display: inline-block; margin-top: 12px; color: var(--brand-deep); font-size: 13px; font-weight: 600; text-decoration: none; }
+.event-link:hover { text-decoration: underline; }
+@media (max-width: 430px) { .tabs .tab { font-size: 12px; padding: 9px 2px; } }

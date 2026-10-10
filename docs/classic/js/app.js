@@ -19,9 +19,13 @@
 
   var state = {
     data: null,           // { meta, companies }
+    events: null,
+    eventsLoading: false,
+    eventsError: false,
     tab: "today_new",     // today_new | ongoing | favorites
     only26: false,
     search: "",
+    source: "",
     industry: "",
     companyType: "",
     location: "",
@@ -381,12 +385,28 @@
       .catch(function () { /* 无通知文件或离线，忽略 */ });
   }
 
+  var SOURCE_NAMES = {
+    youoffer: "Offer 派",
+    hahazhao: "今日校招",
+    hebut: "河北工大就业中心",
+    tencent: "腾讯校招官网"
+  };
+  function sourceKeys(c) {
+    var keys = Array.isArray(c.sources) ? c.sources.slice() : [c.source];
+    if (c.official_jobs_url && keys.indexOf("tencent") < 0) { keys.push("tencent"); }
+    return keys.filter(function (key) { return !!SOURCE_NAMES[key]; });
+  }
+  function sourceLabel(c) {
+    return sourceKeys(c).map(function (key) { return SOURCE_NAMES[key]; }).join("、") || "来源待核实";
+  }
+
   // ---------- 过滤 ----------
   function filterCompanies() {
     var source = (state.tab === "favorites") ? favRecords() : state.data.companies;
     return source.filter(function (c) {
       if (state.tab !== "favorites" && c.status !== state.tab) { return false; }
       if (state.only26 && !c.is_26) { return false; }
+      if (state.source && sourceKeys(c).indexOf(state.source) < 0) { return false; }
       if (state.industry && c.industry !== state.industry) { return false; }
       if (state.companyType && typeBucket(c.company_type) !== state.companyType) { return false; }
       if (state.location && locTokens(c.location).indexOf(state.location) < 0) { return false; }
@@ -443,6 +463,7 @@
     el.countToday.textContent = meta.today_new || 0;
     el.countOngoing.textContent = meta.ongoing || 0;
     updateFavCount();
+    if (state.events) { el.countEvents.textContent = state.events.length; }
     buildIndustryOptions(meta.industries || []);
     buildTypeOptions();
     buildLocOptions();
@@ -612,6 +633,12 @@
       b26.textContent = "26届";
       tags.appendChild(b26);
     }
+    sourceKeys(c).forEach(function (key) {
+      var sb = document.createElement("span");
+      sb.className = "badge badge-source";
+      sb.textContent = SOURCE_NAMES[key];
+      tags.appendChild(sb);
+    });
     card.appendChild(head);
     card.appendChild(tags);
 
@@ -661,9 +688,85 @@
     return r;
   }
 
+  // 宣讲活动与招聘岗位分开显示，活动卡片不标作可投岗位。
+  function loadEvents() {
+    if (state.eventsLoading) { return; }
+    state.eventsLoading = true;
+    state.eventsError = false;
+    fetch(baseUrl() + "/data/events.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) { throw new Error("HTTP " + r.status); } return r.json(); })
+      .then(function (json) {
+        if (!json || !Array.isArray(json.events)) { throw new Error("活动数据格式错误"); }
+        state.events = json.events;
+        state.eventsLoading = false;
+        el.countEvents.textContent = state.events.length;
+        if (state.tab === "events") { renderList(); }
+      })
+      .catch(function () {
+        state.eventsLoading = false;
+        state.eventsError = true;
+        if (state.tab === "events") { renderList(); }
+      });
+  }
+
+  function renderEvents() {
+    el.cardList.innerHTML = "";
+    if (el.loadMore) { el.loadMore.hidden = true; }
+    if (!state.events) {
+      el.empty.hidden = false;
+      el.empty.textContent = state.eventsError ? "宣讲活动暂时无法加载，请稍后重试" : "正在加载宣讲活动…";
+      updateFilterTip(0);
+      return;
+    }
+    var q = state.search.toLowerCase();
+    var events = state.events.filter(function (e) {
+      return !q || ((e.title || "") + " " + (e.place || "")).toLowerCase().indexOf(q) >= 0;
+    }).sort(function (a, b) { return (a.event_at || "").localeCompare(b.event_at || ""); });
+    el.empty.hidden = events.length > 0;
+    if (!events.length) { el.empty.textContent = "暂无符合条件的宣讲活动"; }
+    var note = document.createElement("div");
+    note.className = "events-note";
+    note.textContent = "宣讲活动来自河北工业大学就业指导中心，时间和地点请以原公告为准。";
+    el.cardList.appendChild(note);
+    var frag = document.createDocumentFragment();
+    events.forEach(function (e) {
+      var card = document.createElement("article");
+      card.className = "card event-card";
+      var title = document.createElement("div");
+      title.className = "card-name";
+      title.textContent = e.title || "未命名宣讲活动";
+      card.appendChild(title);
+      var tags = document.createElement("div");
+      tags.className = "card-tags";
+      var badge = document.createElement("span");
+      badge.className = "badge badge-source";
+      badge.textContent = "河北工大就业中心 · 宣讲活动";
+      tags.appendChild(badge);
+      card.appendChild(tags);
+      var rows = document.createElement("div");
+      rows.className = "card-rows";
+      rows.appendChild(row("时间", (e.event_at || "待公布").replace("T", " "), true));
+      rows.appendChild(row("地点", e.place || "待公布", false));
+      card.appendChild(rows);
+      if (/^https:\/\/career\.hebut\.edu\.cn\//.test(e.url || "")) {
+        var link = document.createElement("a");
+        link.className = "event-link";
+        link.href = e.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "查看活动详情 ↗";
+        card.appendChild(link);
+      }
+      frag.appendChild(card);
+    });
+    el.cardList.appendChild(frag);
+    updateFilterTip(events.length);
+  }
+
   function renderList() {
     var listEl = el.cardList;
     listEl.innerHTML = "";
+    if (state.tab === "events") { renderEvents(); return; }
     if (!state.data) { return; }
     var list = filterCompanies();
     state.filteredLen = list.length;
@@ -696,12 +799,17 @@
   }
 
   function updateFilterTip(total) {
+    if (state.tab === "events") {
+      el.filterTip.textContent = "宣讲活动 · " + total + " 场";
+      return;
+    }
     if (state.tab === "favorites") {
       el.filterTip.textContent = "已收藏 " + favs.length + " 家";
       return;
     }
     var parts = [];
     if (state.only26) { parts.push("仅26届"); }
+    if (state.source) { parts.push(SOURCE_NAMES[state.source]); }
     if (state.industry) { parts.push(state.industry); }
     if (state.companyType) { parts.push(state.companyType); }
     if (state.location) { parts.push(state.location); }
@@ -783,6 +891,7 @@
     // 详情字段卡
     var info = document.createElement("div");
     info.className = "detail-card";
+    info.appendChild(field("信息来源", sourceLabel(c), false));
     info.appendChild(field("目标届数", c.target_years || "--", c.is_26));
     info.appendChild(field("状态", c.status === "today_new" ? "今日新增" : "正在进行", false));
     info.appendChild(field("更新日期", c.post_date || "--", false));
@@ -816,6 +925,16 @@
         window.open(c.notice_url, "_blank", "noopener");
       });
       body.appendChild(btn2);
+    }
+
+    if (c.official_jobs_url) {
+      var jobsBtn = document.createElement("button");
+      jobsBtn.className = "btn-link secondary";
+      jobsBtn.textContent = "查看腾讯校招官网岗位";
+      jobsBtn.addEventListener("click", function () {
+        window.open(c.official_jobs_url, "_blank", "noopener");
+      });
+      body.appendChild(jobsBtn);
     }
 
     el.listView.hidden = true;
@@ -867,13 +986,16 @@
   }
 
   // ---------- 标签切换（点击 + 左右滑动） ----------
-  var TAB_ORDER = ["today_new", "ongoing", "favorites"];
+  var TAB_ORDER = ["today_new", "ongoing", "favorites", "events"];
   function switchTab(tabName, dir) {
     var target = document.querySelector('.tab[data-tab="' + tabName + '"]');
     if (!target || state.tab === tabName) { return; }
     document.querySelectorAll(".tab").forEach(function (x) { x.classList.remove("active"); });
     target.classList.add("active");
     state.tab = tabName;
+    document.body.classList.toggle("events-mode", tabName === "events");
+    el.searchInput.placeholder = tabName === "events" ? "搜索宣讲活动 / 地点" : "搜索公司 / 岗位 / 专业 / 城市";
+    if (tabName === "events") { loadEvents(); }
     if (el.listView) {
       el.listView.classList.remove("swipe-left", "swipe-right");
       if (dir === "left") { el.listView.classList.add("swipe-left"); }
@@ -922,6 +1044,11 @@
         resetView();
         renderList();
       }, 200);
+    });
+
+    el.sourceSelect.addEventListener("change", function () {
+      state.source = el.sourceSelect.value;
+      resetView(); renderList();
     });
 
     el.industrySelect.addEventListener("change", function () {
@@ -1023,6 +1150,7 @@
     el.refreshBtn = $("refreshBtn");
     el.switch26 = $("switch26");
     el.searchInput = $("searchInput");
+    el.sourceSelect = $("sourceSelect");
     el.industrySelect = $("industrySelect");
     el.typeSelect = $("typeSelect");
     el.locSelect = $("locSelect");
@@ -1036,6 +1164,7 @@
     el.countToday = $("countToday");
     el.countOngoing = $("countOngoing");
     el.countFav = $("countFav");
+    el.countEvents = $("countEvents");
     el.detailActions = $("detailActions");
     el.listView = $("listView");
     el.detailView = $("detailView");
@@ -1064,6 +1193,7 @@
 
     bindEvents();
     loadData(false);
+    loadEvents();
     checkNotify();   // 打开时立即检查一次新岗位
     setInterval(function () {
       if (document.visibilityState !== "hidden") { checkNotify(); }
