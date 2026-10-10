@@ -2,7 +2,7 @@
 """每日增量更新入口：抓最新数据 -> 重建 APP 数据。
 
 容错策略：单个数据源失败不阻断整体，只要至少一个源成功就继续构建；
-两个源都失败才退出非 0（触发失败通知，提醒检查数据源）。
+所有源都失败才退出非 0（触发失败通知，提醒检查数据源）。
 """
 import os
 import subprocess
@@ -23,6 +23,7 @@ def main():
     for name, args in (
         ("youoffer.py", ("--daily",)),        # 抓取 YouOffer 前 5 页（今日新增/最新更新）
         ("hahazhao.py", ("--pages", "5")),    # 抓取今日校招前 5 页
+        ("hebut.py", ("--pages", "3")),         # 高校就业中心公开校招公告
     ):
         rc = run(name, *args)
         if rc == 0:
@@ -30,7 +31,7 @@ def main():
         else:
             print("!! %s 失败（退出码 %d），继续尝试其他数据源" % (name, rc))
     if ok == 0:
-        print("!! 两个数据源均失败，本次跳过构建")
+        print("!! 所有数据源均失败，本次跳过构建")
         sys.exit(1)
     rc = run("build.py")                      # 合并重建 app/data/data.json
     if rc != 0:
@@ -40,3 +41,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

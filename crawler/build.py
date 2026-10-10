@@ -197,12 +197,14 @@ def main():
 
     ystore = load_json(os.path.join(DATA_DIR, "youoffer_store.json"))
     hstore = load_json(os.path.join(DATA_DIR, "hahazhao_store.json"))
+    estore = load_json(os.path.join(DATA_DIR, "hebut_store.json"))
     if not ystore:
         print("缺少 youoffer_store.json，请先运行 youoffer.py")
         sys.exit(1)
 
     you_companies = ystore.get("companies", {})
     haz_companies = (hstore or {}).get("companies", {})
+    edu_companies = (estore or {}).get("companies", {})
 
     # ---------- 1. 行业映射（hahazhao 公司名 -> 最常见行业） ----------
     ind_map = defaultdict(Counter)
@@ -428,6 +430,46 @@ def main():
         out.append(item)
         seen_names.add(n)
 
+    # ---------- 3.5 高校就业中心独有公告 ----------
+    for h in sorted(edu_companies.values(), key=lambda x: x.get("post_date", ""), reverse=True):
+        name = h.get("name", "")
+        n = normalize_name(name)
+        if not n or n in seen_names:
+            continue
+        post_date = h.get("post_date", "")
+        if is_expired(h.get("deadline", ""), today, post_date) or is_stale(post_date, h.get("deadline", ""), today):
+            continue
+        title = h.get("title", "")
+        years = parse_years(title)
+        degree = h.get("edu_req", "").strip()
+        # 高校详情页有结构化学历字段；只有明确写出专科/大专时才标注专科可报。
+        college = bool(re.search(r"专科|大专|高职", degree))
+        if college:
+            edu = "专科及以上"
+        elif "博士" in degree:
+            edu = "博士及以上"
+        elif "硕士" in degree or "研究生" in degree:
+            edu = "硕士及以上"
+        elif "本科" in degree:
+            edu = "本科及以上"
+        else:
+            edu = "学历待核实"
+        notice = clean_url(h.get("notice_url", ""))
+        if not notice:
+            continue
+        out.append({
+            "id": "e_" + str(h.get("id", "")), "source": "hebut", "name": name,
+            "industry": match_industry(name) or "其他", "company_type": "",
+            "location": h.get("location", ""), "position": title,
+            "positions": [title], "majors": [], "title": title, "scale": "",
+            "recruit_type": "校园招聘", "target_years": ",".join(y + "届" for y in sorted(years)),
+            "years": sorted(years), "is_26": "2026" in years,
+            "edu_req": edu, "is_college": college, "post_date": post_date,
+            "deadline": h.get("deadline", ""), "apply_url": notice,
+            "notice_url": notice, "status": "today_new" if post_date == today else "ongoing",
+        })
+        seen_names.add(n)
+
     # ---------- 4. 排序：今日新增按日期降序；正在进行也按更新时间降序 ----------
     out.sort(key=lambda x: (x["post_date"], x["name"]), reverse=True)
 
@@ -454,6 +496,7 @@ def main():
         "sources": {
             "youoffer": len(you_companies),
             "hahazhao": len(haz_companies),
+            "hebut": len(edu_companies),
         },
     }
 
