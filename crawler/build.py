@@ -27,6 +27,7 @@ from datetime import date, datetime
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 from collections import Counter, defaultdict
+from functools import lru_cache
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(ROOT, "data")
@@ -167,6 +168,34 @@ BACHELOR_PLUS_RE = re.compile(
     r"(本科|硕士|博士)(?:及以上|以上|学历)"
 )
 COLLEGE_RE = re.compile(r"专科|大专|高职|职业技术|高等职业")
+
+# 只有公告正文中的明确岗位/学历搭配才覆盖高校页面的汇总学历。
+COLLEGE_JOB_RE = re.compile(
+    r"(?:[\u4e00-\u9fff（）()]{2,24}(?:岗|岗位|操作工|技术员))\s*\d{0,4}\s*"
+    r"(?:大专|专科|高职)(?:[（(]高职[）)])?"
+)
+
+
+@lru_cache(maxsize=1)
+def education_evidence():
+    return load_json(os.path.join(DATA_DIR, "education_verification.json")) or {}
+
+
+def verified_education(item):
+    """按公告 URL 精确匹配人工核实结果，不按公司名扩散到其他招聘项目。"""
+    evidence = education_evidence()
+    record = evidence.get(item.get("notice_url", ""))
+    if not isinstance(record, dict):
+        return
+    degree = record.get("edu_req")
+    if degree not in ("专科及以上", "本科及以上", "硕士及以上", "博士及以上"):
+        return
+    if not record.get("evidence_url", "").startswith("https://"):
+        return
+    item["edu_req"] = degree
+    item["is_college"] = degree == "专科及以上"
+    item["edu_evidence_url"] = record["evidence_url"]
+    item["edu_evidence"] = record.get("evidence", "")[:120]
 
 
 def parse_edu(text):
@@ -429,6 +458,7 @@ def main():
             "notice_url": clean_url(h.get("original_link")),
             "status": "today_new" if post_date == today else "ongoing",
         }
+        verified_education(item)
         out.append(item)
         seen_names.add(n)
 
@@ -449,6 +479,9 @@ def main():
         degree = h.get("edu_req", "").strip()
         # 高校详情页有结构化学历字段；只有明确写出专科/大专时才标注专科可报。
         college = bool(re.search(r"专科|大专|高职", degree))
+        detail_college = COLLEGE_JOB_RE.search(h.get("description", ""))
+        if detail_college:
+            college = True
         if college:
             edu = "专科及以上"
         elif "博士" in degree:
@@ -462,7 +495,7 @@ def main():
         notice = clean_url(h.get("notice_url", ""))
         if not notice:
             continue
-        out.append({
+        item = {
             "id": "e_" + str(h.get("id", "")), "source": "hebut", "name": name,
             "industry": match_industry(name) or "其他", "company_type": "",
             "location": h.get("location", ""), "position": title,
@@ -472,7 +505,11 @@ def main():
             "edu_req": edu, "is_college": college, "post_date": post_date,
             "deadline": h.get("deadline", ""), "apply_url": notice,
             "notice_url": notice, "status": "today_new" if post_date == today else "ongoing",
-        })
+        }
+        if detail_college:
+            item["edu_evidence_url"] = notice
+            item["edu_evidence"] = detail_college.group()[:120]
+        out.append(item)
         seen_names.add(n)
 
     # ---------- 3.6 企业官网岗位：按公司聚合，未提供发布日期时不标成今日新增 ----------

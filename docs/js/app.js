@@ -928,6 +928,7 @@
     info.appendChild(field("信息来源", sourceLabel(c), false));
     info.appendChild(field("目标届数", c.target_years || "--", c.is_26));
     info.appendChild(field("学历要求", eduLabel(c), c.is_college, "highlight-college"));
+    if (c.edu_evidence) info.appendChild(field("学历依据", c.edu_evidence, false));
     info.appendChild(field("状态", c.status === "today_new" ? "今日新增" : "正在进行", false));
     info.appendChild(field("更新日期", c.post_date || "--", false));
     info.appendChild(field("投递截止", c.deadline || "--", false));
@@ -960,6 +961,16 @@
         window.open(c.notice_url, "_blank", "noopener");
       });
       body.appendChild(btn2);
+    }
+
+    if (c.edu_evidence_url) {
+      var evidenceBtn = document.createElement("button");
+      evidenceBtn.className = "btn-link secondary";
+      evidenceBtn.textContent = "查看学历依据原文";
+      evidenceBtn.addEventListener("click", function () {
+        window.open(c.edu_evidence_url, "_blank", "noopener");
+      });
+      body.appendChild(evidenceBtn);
     }
 
     if (c.official_jobs_url) {
