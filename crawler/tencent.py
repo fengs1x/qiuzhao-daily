@@ -47,7 +47,8 @@ def main():
     if not ids:
         raise RuntimeError("腾讯校招项目映射为空，停止覆盖缓存")
     rows = []
-    for page in (1, 2):
+    total = None
+    for page in range(1, 11):
         body = {"projectIdList": [], "projectMappingIdList": ids, "keyword": "",
                 "bgList": [], "workCountryType": 0, "workCityList": [],
                 "recruitCityList": [], "positionFidList": [], "pageIndex": page, "pageSize": 100}
@@ -55,11 +56,15 @@ def main():
         page_rows = data.get("positionList") or []
         if not isinstance(page_rows, list):
             raise RuntimeError("腾讯岗位列表格式变化")
+        if total is None:
+            total = int(data.get("count") or 0)
         rows.extend(page_rows)
         print("腾讯校招第 %d 页：%d 条" % (page, len(page_rows)), flush=True)
-        if len(page_rows) < 100:
+        if len(page_rows) < 100 or (total and len(rows) >= total):
             break
         time.sleep(5)
+    if total and len(rows) < total:
+        raise RuntimeError("腾讯岗位只抓到 %d/%d 条，停止覆盖缓存" % (len(rows), total))
     if not rows:
         raise RuntimeError("腾讯校招列表为空，停止覆盖缓存")
     old = {}
