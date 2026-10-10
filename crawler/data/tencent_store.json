@@ -1,0 +1,1805 @@
+{
+  "source": "tencent",
+  "positions": {
+    "1282707398326592512": {
+      "id": "1282707398326592512",
+      "title": "AI全栈工程师",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707398326592512"
+    },
+    "1282707395466077184": {
+      "id": "1282707395466077184",
+      "title": "Agent开发工程师",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707395466077184"
+    },
+    "1282707395466077185": {
+      "id": "1282707395466077185",
+      "title": "AI应用工程师",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707395466077185"
+    },
+    "1282707395466077186": {
+      "id": "1282707395466077186",
+      "title": "AI算法工程",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707395466077186"
+    },
+    "1283126460798018560": {
+      "id": "1283126460798018560",
+      "title": "技术研究-高性能计算方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都 合肥",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126460798018560"
+    },
+    "1283126524891177984": {
+      "id": "1283126524891177984",
+      "title": "技术研究-基础架构方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126524891177984"
+    },
+    "1283126456553382912": {
+      "id": "1283126456553382912",
+      "title": "AI产品经理",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126456553382912"
+    },
+    "1277366754477467648": {
+      "id": "1277366754477467648",
+      "title": "投资运营分析师",
+      "project": "应届毕业生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1277366754477467648"
+    },
+    "1277366755316311040": {
+      "id": "1277366755316311040",
+      "title": "投资分析",
+      "project": "应届毕业生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1277366755316311040"
+    },
+    "1282032033786619904": {
+      "id": "1282032033786619904",
+      "title": "游戏策划培训生",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282032033786619904"
+    },
+    "1282032033786619905": {
+      "id": "1282032033786619905",
+      "title": "游戏发行/运营培训生",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282032033786619905"
+    },
+    "1282032034373805056": {
+      "id": "1282032034373805056",
+      "title": "游戏客户端开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282032034373805056"
+    },
+    "1282707374754604032": {
+      "id": "1282707374754604032",
+      "title": "产品策划",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707374754604032"
+    },
+    "1282707375417304064": {
+      "id": "1282707375417304064",
+      "title": "市场营销",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707375417304064"
+    },
+    "1282707379615819776": {
+      "id": "1282707379615819776",
+      "title": "项目管理",
+      "project": "应届毕业生",
+      "location": "西安 深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707379615819776"
+    },
+    "1282707379615819777": {
+      "id": "1282707379615819777",
+      "title": "产品运营",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707379615819777"
+    },
+    "1282707380882482176": {
+      "id": "1282707380882482176",
+      "title": "商务拓展",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州 中国香港",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707380882482176"
+    },
+    "1282707381767480320": {
+      "id": "1282707381767480320",
+      "title": "商业分析",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707381767480320"
+    },
+    "1282707383965295616": {
+      "id": "1282707383965295616",
+      "title": "后台开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都 武汉 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707383965295616"
+    },
+    "1282707383965295617": {
+      "id": "1282707383965295617",
+      "title": "移动客户端开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707383965295617"
+    },
+    "1282707390126745600": {
+      "id": "1282707390126745600",
+      "title": "算法-机器学习方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707390126745600"
+    },
+    "1282707391506654208": {
+      "id": "1282707391506654208",
+      "title": "2D角色设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707391506654208"
+    },
+    "1282707391506654209": {
+      "id": "1282707391506654209",
+      "title": "2D场景设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707391506654209"
+    },
+    "1282707392714613760": {
+      "id": "1282707392714613760",
+      "title": "交互设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707392714613760"
+    },
+    "1282707392714613761": {
+      "id": "1282707392714613761",
+      "title": "3D场景设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 广州 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707392714613761"
+    },
+    "1282707393989682176": {
+      "id": "1282707393989682176",
+      "title": "视觉设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707393989682176"
+    },
+    "1282707403120699392": {
+      "id": "1282707403120699392",
+      "title": "算法-多媒体处理方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707403120699392"
+    },
+    "1282707403120699393": {
+      "id": "1282707403120699393",
+      "title": "算法-多模态方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707403120699393"
+    },
+    "1282707405033302016": {
+      "id": "1282707405033302016",
+      "title": "算法-自然语言处理方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707405033302016"
+    },
+    "1282707405033302017": {
+      "id": "1282707405033302017",
+      "title": "算法-数据科学方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707405033302017"
+    },
+    "1282707420237636608": {
+      "id": "1282707420237636608",
+      "title": "游戏引擎开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 成都 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707420237636608"
+    },
+    "1282707425254024192": {
+      "id": "1282707425254024192",
+      "title": "3D角色设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707425254024192"
+    },
+    "1282707425254024193": {
+      "id": "1282707425254024193",
+      "title": "动画",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707425254024193"
+    },
+    "1282707427871269888": {
+      "id": "1282707427871269888",
+      "title": "特效",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707427871269888"
+    },
+    "1282707439695012864": {
+      "id": "1282707439695012864",
+      "title": "PC客户端开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707439695012864"
+    },
+    "1282707439695012865": {
+      "id": "1282707439695012865",
+      "title": "前端开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都 武汉",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707439695012865"
+    },
+    "1282707442895266816": {
+      "id": "1282707442895266816",
+      "title": "公关",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1282707442895266816"
+    },
+    "1283045530146251776": {
+      "id": "1283045530146251776",
+      "title": "秘书",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283045530146251776"
+    },
+    "1283045533715604480": {
+      "id": "1283045533715604480",
+      "title": "物业运营与办公规划管理",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283045533715604480"
+    },
+    "1283126425985295360": {
+      "id": "1283126425985295360",
+      "title": "产品体验设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126425985295360"
+    },
+    "1283126436643021824": {
+      "id": "1283126436643021824",
+      "title": "算法-推荐算法方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126436643021824"
+    },
+    "1283126452350690304": {
+      "id": "1283126452350690304",
+      "title": "内容运营",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126452350690304"
+    },
+    "1283126465243980800": {
+      "id": "1283126465243980800",
+      "title": "算法-计算机视觉方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126465243980800"
+    },
+    "1283126469811577856": {
+      "id": "1283126469811577856",
+      "title": "战略商业分析师",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126469811577856"
+    },
+    "1283126495480718336": {
+      "id": "1283126495480718336",
+      "title": "行业运营",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126495480718336"
+    },
+    "1283126495480718337": {
+      "id": "1283126495480718337",
+      "title": "行业解决方案-客户成功",
+      "project": "应届毕业生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126495480718337"
+    },
+    "1283126495480718338": {
+      "id": "1283126495480718338",
+      "title": "AI安全技术工程师（风控算法）",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126495480718338"
+    },
+    "1283126501084308480": {
+      "id": "1283126501084308480",
+      "title": "测试开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126501084308480"
+    },
+    "1283126506864059392": {
+      "id": "1283126506864059392",
+      "title": "运营开发",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126506864059392"
+    },
+    "1283126512731890688": {
+      "id": "1283126512731890688",
+      "title": "测试与质量管理",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126512731890688"
+    },
+    "1283126531220382720": {
+      "id": "1283126531220382720",
+      "title": "数据工程",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126531220382720"
+    },
+    "1283126696601756672": {
+      "id": "1283126696601756672",
+      "title": "AI安全技术工程师",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283126696601756672"
+    },
+    "1283878418584511488": {
+      "id": "1283878418584511488",
+      "title": "游戏宣发视觉设计",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878418584511488"
+    },
+    "1283878428562760704": {
+      "id": "1283878428562760704",
+      "title": "技术美术（多方向）",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878428562760704"
+    },
+    "1283878428566955008": {
+      "id": "1283878428566955008",
+      "title": "游戏GUI视觉设计",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878428566955008"
+    },
+    "1283878428566955009": {
+      "id": "1283878428566955009",
+      "title": "技术美术（AI方向）",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878428566955009"
+    },
+    "1283878440197760000": {
+      "id": "1283878440197760000",
+      "title": "算法-计算机图形学方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878440197760000"
+    },
+    "1283878464457614336": {
+      "id": "1283878464457614336",
+      "title": "多媒体设计",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878464457614336"
+    },
+    "1283878477271213056": {
+      "id": "1283878477271213056",
+      "title": "音频策划",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878477271213056"
+    },
+    "1283878477271213057": {
+      "id": "1283878477271213057",
+      "title": "游戏动效设计(特效向)",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878477271213057"
+    },
+    "1283878504806818816": {
+      "id": "1283878504806818816",
+      "title": "内容培训生-艺术创作方向（含AIGC）",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878504806818816"
+    },
+    "1283878533483275264": {
+      "id": "1283878533483275264",
+      "title": "用户研究",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878533483275264"
+    },
+    "1283878549379687424": {
+      "id": "1283878549379687424",
+      "title": "算法-其他方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1283878549379687424"
+    },
+    "1284207373170582528": {
+      "id": "1284207373170582528",
+      "title": "腾讯营销管培生",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284207373170582528"
+    },
+    "1284207539936109568": {
+      "id": "1284207539936109568",
+      "title": "投资者关系",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284207539936109568"
+    },
+    "1284317542697182208": {
+      "id": "1284317542697182208",
+      "title": "解决方案-行业咨询方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317542697182208"
+    },
+    "1284317542697182209": {
+      "id": "1284317542697182209",
+      "title": "解决方案-技术咨询方向",
+      "project": "应届毕业生",
+      "location": "西安 深圳总部 北京 上海 重庆 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317542697182209"
+    },
+    "1284317542697182210": {
+      "id": "1284317542697182210",
+      "title": "CSIG技术产品商务培训生",
+      "project": "应届毕业生",
+      "location": "青岛 深圳总部 北京 上海 广州 成都 武汉 杭州 南京 中国香港 西安 重庆 厦门",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317542697182210"
+    },
+    "1284317542697182211": {
+      "id": "1284317542697182211",
+      "title": "硬件开发-系统设计和验证方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317542697182211"
+    },
+    "1284317600528245760": {
+      "id": "1284317600528245760",
+      "title": "技术产品经理",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 成都 杭州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317600528245760"
+    },
+    "1284317763288245248": {
+      "id": "1284317763288245248",
+      "title": "文化交流与接待管理",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317763288245248"
+    },
+    "1284317795626329088": {
+      "id": "1284317795626329088",
+      "title": "采购商务管理",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317795626329088"
+    },
+    "1284317795630523392": {
+      "id": "1284317795630523392",
+      "title": "供应链管理",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317795630523392"
+    },
+    "1284317968595231744": {
+      "id": "1284317968595231744",
+      "title": "业务管理运营",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317968595231744"
+    },
+    "1284317968595231745": {
+      "id": "1284317968595231745",
+      "title": "SRE",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284317968595231745"
+    },
+    "1284318005643518976": {
+      "id": "1284318005643518976",
+      "title": "市场研究",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284318005643518976"
+    },
+    "1284501698043487232": {
+      "id": "1284501698043487232",
+      "title": "技术研究-机器人方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284501698043487232"
+    },
+    "1284501698043487233": {
+      "id": "1284501698043487233",
+      "title": "技术运营",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284501698043487233"
+    },
+    "1284501739072168960": {
+      "id": "1284501739072168960",
+      "title": "硬件开发-芯片设计方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284501739072168960"
+    },
+    "1284501739072168961": {
+      "id": "1284501739072168961",
+      "title": "硬件开发-芯片验证方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284501739072168961"
+    },
+    "1284512614101361664": {
+      "id": "1284512614101361664",
+      "title": "法务",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284512614101361664"
+    },
+    "1284512614101361665": {
+      "id": "1284512614101361665",
+      "title": "公共事务",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284512614101361665"
+    },
+    "1284512614101361666": {
+      "id": "1284512614101361666",
+      "title": "专利",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284512614101361666"
+    },
+    "1284512614105555968": {
+      "id": "1284512614105555968",
+      "title": "员工福利运营",
+      "project": "应届毕业生",
+      "location": "深圳总部 上海 中国香港",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284512614105555968"
+    },
+    "1284512614105555969": {
+      "id": "1284512614105555969",
+      "title": "资质合规管理",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284512614105555969"
+    },
+    "1284512614105555970": {
+      "id": "1284512614105555970",
+      "title": "Overseas Legal Counsel",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284512614105555970"
+    },
+    "1284512614105555971": {
+      "id": "1284512614105555971",
+      "title": "产业研究",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284512614105555971"
+    },
+    "1284528300198503424": {
+      "id": "1284528300198503424",
+      "title": "安全策略",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284528300198503424"
+    },
+    "1284528300198503425": {
+      "id": "1284528300198503425",
+      "title": "数字生态研究",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284528300198503425"
+    },
+    "1284592104206836736": {
+      "id": "1284592104206836736",
+      "title": "内容创作",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284592104206836736"
+    },
+    "1284592104206836737": {
+      "id": "1284592104206836737",
+      "title": "软件开发-渲染引擎开发",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284592104206836737"
+    },
+    "1284632498743321600": {
+      "id": "1284632498743321600",
+      "title": "财经线培训生-专业类",
+      "project": "应届毕业生",
+      "location": "深圳总部 广州 中国香港",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284632498743321600"
+    },
+    "1284632941590553600": {
+      "id": "1284632941590553600",
+      "title": "财经线培训生-分析类",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284632941590553600"
+    },
+    "1284634302709277696": {
+      "id": "1284634302709277696",
+      "title": "财经线培训生-AI应用开发",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1284634302709277696"
+    },
+    "1286682406438715392": {
+      "id": "1286682406438715392",
+      "title": "AI-HR培训生（沟通方向）",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1286682406438715392"
+    },
+    "1286682460696231936": {
+      "id": "1286682460696231936",
+      "title": "AI-HR培训生（创意方向）",
+      "project": "应届毕业生",
+      "location": "深圳总部 广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1286682460696231936"
+    },
+    "1286682460696231937": {
+      "id": "1286682460696231937",
+      "title": "AI-HR培训生（分析方向）",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 上海 广州 成都",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1286682460696231937"
+    },
+    "1286682460696231938": {
+      "id": "1286682460696231938",
+      "title": "AI-HR培训生（技术&应用方向）",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1286682460696231938"
+    },
+    "1286769609550496768": {
+      "id": "1286769609550496768",
+      "title": "金融风险管理",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1286769609550496768"
+    },
+    "1287398663932755968": {
+      "id": "1287398663932755968",
+      "title": "数据中心技术",
+      "project": "应届毕业生",
+      "location": "深圳总部 韶关 芜湖",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1287398663932755968"
+    },
+    "1287398722585903104": {
+      "id": "1287398722585903104",
+      "title": "算法-强化学习方向",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1287398722585903104"
+    },
+    "1287398722585903105": {
+      "id": "1287398722585903105",
+      "title": "网络技术",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京 中国香港",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1287398722585903105"
+    },
+    "1292833382451231744": {
+      "id": "1292833382451231744",
+      "title": "法律/行业/产业研究",
+      "project": "应届毕业生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1292833382451231744"
+    },
+    "1294711245765017600": {
+      "id": "1294711245765017600",
+      "title": "游戏动效设计(UI向)",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1294711245765017600"
+    },
+    "1294744848557342720": {
+      "id": "1294744848557342720",
+      "title": "内容培训生-内容技术方向（含AIGC）",
+      "project": "应届毕业生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1294744848557342720"
+    },
+    "1274356447064759296": {
+      "id": "1274356447064759296",
+      "title": "腾讯营销—基于大模型Agent的腾讯电商广告推荐研究",
+      "project": "青云计划-应届生",
+      "location": "上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274356447064759296"
+    },
+    "1274356448142695424": {
+      "id": "1274356448142695424",
+      "title": "腾讯营销—多模态大模型与强化学习驱动的广告投放Agent",
+      "project": "青云计划-应届生",
+      "location": "上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274356448142695424"
+    },
+    "1274356451661716480": {
+      "id": "1274356451661716480",
+      "title": "腾讯营销—面向生成式推荐的强化学习优化技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274356451661716480"
+    },
+    "1274356454937467904": {
+      "id": "1274356454937467904",
+      "title": "腾讯营销—广告推荐基础大模型",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274356454937467904"
+    },
+    "1274481034578500612": {
+      "id": "1274481034578500612",
+      "title": "PCG大数据平台部-视频生成与编辑统一模型应用研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500612"
+    },
+    "1274481034578500617": {
+      "id": "1274481034578500617",
+      "title": "混元多模态-多模态强化学习研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500617"
+    },
+    "1274481034578500621": {
+      "id": "1274481034578500621",
+      "title": "混元多模态-面向专业管线的3D Mesh生成大模型研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500621"
+    },
+    "1274481034578500622": {
+      "id": "1274481034578500622",
+      "title": "混元基座模型-视觉理解大模型研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500622"
+    },
+    "1274481034578500623": {
+      "id": "1274481034578500623",
+      "title": "混元多模态-原生多模态模型探索",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500623"
+    },
+    "1274481034578500624": {
+      "id": "1274481034578500624",
+      "title": "混元多模态-图音视频理解技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500624"
+    },
+    "1274481034578500625": {
+      "id": "1274481034578500625",
+      "title": "混元多模态-大模型数据挖掘与合成技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500625"
+    },
+    "1274481034578500626": {
+      "id": "1274481034578500626",
+      "title": "混元多模态-视频生成基础模型",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500626"
+    },
+    "1274481034578500627": {
+      "id": "1274481034578500627",
+      "title": "混元多模态-原生多模态后训练技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500627"
+    },
+    "1274481034578500628": {
+      "id": "1274481034578500628",
+      "title": "混元多模态-视频后训练技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500628"
+    },
+    "1274481034578500630": {
+      "id": "1274481034578500630",
+      "title": "混元多模态-视觉编码器技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500630"
+    },
+    "1274481034578500631": {
+      "id": "1274481034578500631",
+      "title": "混元多模态-全模态音视频理解研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500631"
+    },
+    "1274481034578500632": {
+      "id": "1274481034578500632",
+      "title": "混元多模态-全模态Agentic Model研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500632"
+    },
+    "1274481034578500633": {
+      "id": "1274481034578500633",
+      "title": "混元多模态-全模态Reasoning Model研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500633"
+    },
+    "1274481034578500634": {
+      "id": "1274481034578500634",
+      "title": "混元多模态-基于Verifiable Reward的多模态强化学习",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500634"
+    },
+    "1274481034578500635": {
+      "id": "1274481034578500635",
+      "title": "混元多模态-User Simulator in Multimodal Interaction",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500635"
+    },
+    "1274481034578500636": {
+      "id": "1274481034578500636",
+      "title": "混元多模态-多模态交互大模型的Model Merge",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500636"
+    },
+    "1274481034578500637": {
+      "id": "1274481034578500637",
+      "title": "混元多模态-Auto-CoT: 任务复杂度感知的自适应思维链触发与路径控制研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500637"
+    },
+    "1274481034578500638": {
+      "id": "1274481034578500638",
+      "title": "混元多模态-统一音频生成大模型研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500638"
+    },
+    "1274481034578500639": {
+      "id": "1274481034578500639",
+      "title": "混元多模态-面向多模态低精度强化学习的稳定训练架构和数值对齐系统的研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500639"
+    },
+    "1274481034578500640": {
+      "id": "1274481034578500640",
+      "title": "混元多模态-面向多模态强化的全异步训推解耦系统与极致分布式架构的研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500640"
+    },
+    "1274481034578500641": {
+      "id": "1274481034578500641",
+      "title": "混元多模态-视觉生成强化学习关键技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500641"
+    },
+    "1274481034578500642": {
+      "id": "1274481034578500642",
+      "title": "混元多模态-视觉智能体强化学习关键技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500642"
+    },
+    "1274481034578500645": {
+      "id": "1274481034578500645",
+      "title": "端到端AI视频图像编解码",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500645"
+    },
+    "1274481034578500651": {
+      "id": "1274481034578500651",
+      "title": "面向通用机器人操作的具身多模态模型",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500651"
+    },
+    "1274481034578500652": {
+      "id": "1274481034578500652",
+      "title": "面向长程、复杂决策问题的具身智能体的研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500652"
+    },
+    "1274481034578500653": {
+      "id": "1274481034578500653",
+      "title": "面向以“人”为中心的具身交互智能体研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500653"
+    },
+    "1274481034578500654": {
+      "id": "1274481034578500654",
+      "title": "面向真实物理世界的多模态大模型研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500654"
+    },
+    "1274481034578500656": {
+      "id": "1274481034578500656",
+      "title": "基于AI大模型的数据库自学习优化器方向研发和探索",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500656"
+    },
+    "1274481034578500660": {
+      "id": "1274481034578500660",
+      "title": "混元-新一代大模型分布式训练基础框架研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500660"
+    },
+    "1274481034578500661": {
+      "id": "1274481034578500661",
+      "title": "混元-大模型infra稳定性研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500661"
+    },
+    "1274481034578500662": {
+      "id": "1274481034578500662",
+      "title": "混元-LLM压缩算法(量化、投机采样、稀疏化)研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500662"
+    },
+    "1274481034578500663": {
+      "id": "1274481034578500663",
+      "title": "混元- LLM高性能推理框架调度及高性能算子优化研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500663"
+    },
+    "1274481034578500664": {
+      "id": "1274481034578500664",
+      "title": "混元-多模态理解与生成模型高性能推理框架及算子优化研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500664"
+    },
+    "1274481034578500665": {
+      "id": "1274481034578500665",
+      "title": "算力统一运行时技术的研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500665"
+    },
+    "1274481034578500666": {
+      "id": "1274481034578500666",
+      "title": "大规模资源调度技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500666"
+    },
+    "1274481034578500670": {
+      "id": "1274481034578500670",
+      "title": "面向前沿大模型的异构计算芯片架构研究与评估体系构建",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500670"
+    },
+    "1274481034578500671": {
+      "id": "1274481034578500671",
+      "title": "面向前沿大模型的数据压缩技术及微架构设计研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500671"
+    },
+    "1274481034578500672": {
+      "id": "1274481034578500672",
+      "title": "游戏AI-面向UGC游戏的Vibe Gaming Agent",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500672"
+    },
+    "1274481034578500673": {
+      "id": "1274481034578500673",
+      "title": "游戏AI-基于多模态大语言模型的游戏Agent：感知、决策与交流一体化研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500673"
+    },
+    "1274481034578500674": {
+      "id": "1274481034578500674",
+      "title": "游戏AI-Agentic AI在游戏场景的探索：感知，推理，决策",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500674"
+    },
+    "1274481034578500695": {
+      "id": "1274481034578500695",
+      "title": "混元基座模型-预训练数据效率优化研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500695"
+    },
+    "1274481034578500696": {
+      "id": "1274481034578500696",
+      "title": "混元基座模型-Mid-Train数据的高效筛选与合成研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500696"
+    },
+    "1274481034578500697": {
+      "id": "1274481034578500697",
+      "title": "混元基座模型-大模型预训练动力学研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500697"
+    },
+    "1274481034578500698": {
+      "id": "1274481034578500698",
+      "title": "混元基座模型-大规模强化学习框架性能优化研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500698"
+    },
+    "1274481034578500699": {
+      "id": "1274481034578500699",
+      "title": "混元基座模型-强化学习算法研究&强推理能力优化",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500699"
+    },
+    "1274481034578500700": {
+      "id": "1274481034578500700",
+      "title": "混元基座模型-强化学习生产范式研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500700"
+    },
+    "1274481034578500701": {
+      "id": "1274481034578500701",
+      "title": "混元基座模型-超长文学习&推理能力研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500701"
+    },
+    "1274481034578500702": {
+      "id": "1274481034578500702",
+      "title": "混元基座模型-Reward System研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500702"
+    },
+    "1274481034578500703": {
+      "id": "1274481034578500703",
+      "title": "混元基座模型-垂域认知与推理研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500703"
+    },
+    "1274481034578500705": {
+      "id": "1274481034578500705",
+      "title": "混元基座模型-Agent前沿评测研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500705"
+    },
+    "1274481034578500706": {
+      "id": "1274481034578500706",
+      "title": "混元基座模型-复杂合成数据研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500706"
+    },
+    "1274481034578500707": {
+      "id": "1274481034578500707",
+      "title": "混元基座模型-前沿模型/数据评估算法研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500707"
+    },
+    "1274481034578500708": {
+      "id": "1274481034578500708",
+      "title": "混元基座模型-中小尺寸模型优化相关前沿技术探索",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500708"
+    },
+    "1274481034578500709": {
+      "id": "1274481034578500709",
+      "title": "电脑操作智能体 (CUA) 基模研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500709"
+    },
+    "1274481034578500719": {
+      "id": "1274481034578500719",
+      "title": "微信搜索-大模型AI搜索研究与落地",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500719"
+    },
+    "1274481034578500720": {
+      "id": "1274481034578500720",
+      "title": "微信搜索-强化学习算法研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500720"
+    },
+    "1274481034578500721": {
+      "id": "1274481034578500721",
+      "title": "微信搜索-生成式检索在视频/电商搜索和Query推荐中的应用落地研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500721"
+    },
+    "1274481034578500722": {
+      "id": "1274481034578500722",
+      "title": "WXG-面向Repo-level理解的长文本架构研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500722"
+    },
+    "1274481034578500724": {
+      "id": "1274481034578500724",
+      "title": "WXG-WeLM 大语言模型基座建设",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500724"
+    },
+    "1274481034578500725": {
+      "id": "1274481034578500725",
+      "title": "WXG-WeLM 多模态大模型基座建设",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500725"
+    },
+    "1274481034578500726": {
+      "id": "1274481034578500726",
+      "title": "WXG-WeLM Agentic 系统",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500726"
+    },
+    "1274481034578500727": {
+      "id": "1274481034578500727",
+      "title": "微信-WeLM基座大模型后训练",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500727"
+    },
+    "1274481034578500728": {
+      "id": "1274481034578500728",
+      "title": "微信-统一理解和生成的多模态多语言大模型研究",
+      "project": "青云计划-应届生",
+      "location": "上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500728"
+    },
+    "1274481034578500729": {
+      "id": "1274481034578500729",
+      "title": "微信-WeLM多模态大模型Agentic RL研究",
+      "project": "青云计划-应届生",
+      "location": "上海",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500729"
+    },
+    "1274481034578500730": {
+      "id": "1274481034578500730",
+      "title": "微信-有价值信息主动挖掘和梳理的Agent技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500730"
+    },
+    "1274481034578500731": {
+      "id": "1274481034578500731",
+      "title": "微信-多模态感知大模型",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500731"
+    },
+    "1274481034578500732": {
+      "id": "1274481034578500732",
+      "title": "微信-下一代图文理解生成统一模型",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500732"
+    },
+    "1274481034578500733": {
+      "id": "1274481034578500733",
+      "title": "微信-长视频理解生成统一模型",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500733"
+    },
+    "1274481034578500735": {
+      "id": "1274481034578500735",
+      "title": "微信-电商多模态大模型研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500735"
+    },
+    "1274481034578500736": {
+      "id": "1274481034578500736",
+      "title": "微信-多模态AI搜索研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500736"
+    },
+    "1274481034578500737": {
+      "id": "1274481034578500737",
+      "title": "视频号-AI Infra超大规模训练推理系统研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500737"
+    },
+    "1274481034578500741": {
+      "id": "1274481034578500741",
+      "title": "微信视频号-全域兴趣驱动的生成式推荐与促活系统研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500741"
+    },
+    "1274481034578500742": {
+      "id": "1274481034578500742",
+      "title": "微信视频号-推荐模型 Scaling Up /端到端推荐系统研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500742"
+    },
+    "1274481034578500743": {
+      "id": "1274481034578500743",
+      "title": "WXG-从设计到代码（可信程序自动生成）",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500743"
+    },
+    "1274481034578500744": {
+      "id": "1274481034578500744",
+      "title": "微信读书-长文本处理技术研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500744"
+    },
+    "1274481034578500745": {
+      "id": "1274481034578500745",
+      "title": "微信输入法-LLM个性化智能输入与推理系统优化研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500745"
+    },
+    "1274481034578500746": {
+      "id": "1274481034578500746",
+      "title": "微信秒剪-基于强化学习的视频生成模型优化",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500746"
+    },
+    "1274481034578500747": {
+      "id": "1274481034578500747",
+      "title": "WXG-微信读书-语音合成大模型研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500747"
+    },
+    "1274481034578500748": {
+      "id": "1274481034578500748",
+      "title": "微信输入法-语音识别大模型研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500748"
+    },
+    "1274481034578500749": {
+      "id": "1274481034578500749",
+      "title": "微信小程序代码生成模型",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500749"
+    },
+    "1274481034578500750": {
+      "id": "1274481034578500750",
+      "title": "微信小程序通用智能体",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500750"
+    },
+    "1274481034578500751": {
+      "id": "1274481034578500751",
+      "title": "微信小店跨领域大模型生成式推荐研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500751"
+    },
+    "1274481034578500754": {
+      "id": "1274481034578500754",
+      "title": "微信小游戏-多模态交互式 GUI Agent 研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500754"
+    },
+    "1274481034578500755": {
+      "id": "1274481034578500755",
+      "title": "微信小游戏-基于游戏研发管线的Agentic Coding 研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500755"
+    },
+    "1274481034578500756": {
+      "id": "1274481034578500756",
+      "title": "微信游戏-用户数据驱动的交互式内容生成研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500756"
+    },
+    "1274481034578500757": {
+      "id": "1274481034578500757",
+      "title": "微信游戏-生成式推荐系统研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500757"
+    },
+    "1274481034578500758": {
+      "id": "1274481034578500758",
+      "title": "微信小程序Agent-基于大语言模型的小程序功能组件（Skill）生成式编译技术研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500758"
+    },
+    "1274481034578500759": {
+      "id": "1274481034578500759",
+      "title": "微信搜索-搜索场景下基于大模型的多模态输入表征应用研究",
+      "project": "青云计划-应届生",
+      "location": "广州",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500759"
+    },
+    "1274481034578500760": {
+      "id": "1274481034578500760",
+      "title": "微信搜索-大模型在搜索系统中的应用落地研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500760"
+    },
+    "1274481034578500767": {
+      "id": "1274481034578500767",
+      "title": "腾讯地图多模态大模型融合建图研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-10",
+      "last_seen": "2026-10-10",
+      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500767"
+    }
+  }
+}
