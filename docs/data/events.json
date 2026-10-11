@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-10-11T09:26:37+08:00",
+  "generated_at": "2026-10-11T17:31:24+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 48,
+  "count": 50,
   "events": [
-    {
-      "id": "5371",
-      "title": "中建五局“青苗计划”2027届校园招聘公告",
-      "event_at": "2026-10-14T18:40",
-      "place": "北辰校区教学楼12-D103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5371.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5352",
       "title": "恒力石化（大连）有限公司2027届秋季招聘",
@@ -75,7 +66,9 @@
       "title": "金风科技2027届校园招聘",
       "event_at": "2026-10-15T18:40",
       "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5342.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5342.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5317",
@@ -246,6 +239,13 @@
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5348.html"
     },
     {
+      "id": "5429",
+      "title": "平安产险北分2027届校园招聘",
+      "event_at": "2026-10-19T14:00",
+      "place": "北辰校区教学楼12-C213",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5429.html"
+    },
+    {
       "id": "5374",
       "title": "中车株洲电机有限公司2027届校园招聘",
       "event_at": "2026-10-19T18:40",
@@ -316,6 +316,13 @@
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5369.html"
     },
     {
+      "id": "5427",
+      "title": "恒逸文莱二期2027年校园招聘宣讲会",
+      "event_at": "2026-10-21T18:40",
+      "place": "北辰校区教学楼12-A112",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5427.html"
+    },
+    {
       "id": "5413",
       "title": "龙蟠科技2027届校园招聘简章",
       "event_at": "2026-10-21T18:40",
@@ -363,6 +370,13 @@
       "event_at": "2026-10-23T14:00",
       "place": "北辰校区教学楼12-A105",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5215.html"
+    },
+    {
+      "id": "5434",
+      "title": "恒星计划 智启未来 | 2027经纬恒润校招宣讲会",
+      "event_at": "2026-10-23T15:55",
+      "place": "北辰校区教学楼12-C107",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5434.html"
     }
   ]
 }
