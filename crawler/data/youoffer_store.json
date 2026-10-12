@@ -209803,6 +209803,90 @@
    "apply_url": "https://mp.weixin.qq.com/s/YDpiSWXXlx3-ukyJuwOshg",
    "notice_url": "https://mp.weixin.qq.com/s/YDpiSWXXlx3-ukyJuwOshg",
    "id": "4aa20401ceee7b6e"
+  },
+  "eff7e4ca487471f7": {
+   "source": "youoffer",
+   "name": "中国能建华东院",
+   "company_type": "央国企",
+   "location": "上海",
+   "position": "系统规划工程师、电气工程师、结构工程师、热能工程师、热控工程师、岩土工程师、测量工程师、环保工程师(生态与环境评价)、新能源资源工程师、造价工程师、电力通信工程师、总图工程师、暖通工程师、建筑工程师、财务管理",
+   "post_date": "2026-10-12",
+   "deadline": "招满为止",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "http://hr.ecepdi.com:8066/Mobile/application/resumeAddIndex.html?api=http://hr.ecepdi.com:8066/&hr=http://hr.ecepdi.com:8066/&key=eKgDaxeXDEoBie0csZQTwA==",
+   "notice_url": "https://mp.weixin.qq.com/s/e59UFgtQ5bBa69hexPzvbg",
+   "id": "eff7e4ca487471f7"
+  },
+  "317f319457d5947d": {
+   "source": "youoffer",
+   "name": "中车四方所（中车制动）",
+   "company_type": "央国企",
+   "location": "青岛,北京,南京,株洲",
+   "position": "软硬件开发、电气研发、算法、人工智能、机械设计、工艺、焊接、质量、售后工程师",
+   "post_date": "2026-10-12",
+   "deadline": "招满为止",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://wecruit.hotjob.cn/SU64ca20366202cc125d483eb5/mc/index",
+   "notice_url": "https://mp.weixin.qq.com/s/BvEHhExskYrketJIlvta_g",
+   "id": "317f319457d5947d"
+  },
+  "25f2173d0ff33568": {
+   "source": "youoffer",
+   "name": "海普瑞药业集团",
+   "company_type": "民企",
+   "location": "深圳",
+   "position": "药学研究、药理药效、质量研究、质量控制（QC）、质量保证（QA）、生产工艺、生产管理、计划运营、GxP计算机化系统运维、设备运维、营销管理、HRBP",
+   "post_date": "2026-10-12",
+   "deadline": "招满为止",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://app.mokahr.com/m/campus-recruitment/testhepalink/38174?locale=zh-CN",
+   "notice_url": "https://mp.weixin.qq.com/s/FZK8bF25PvnHTEsAAj8D9A",
+   "id": "25f2173d0ff33568"
+  },
+  "4ad08926dac7cf4e": {
+   "source": "youoffer",
+   "name": "中能未来智慧城市服务集团(浙江)有限公司",
+   "company_type": "民企",
+   "location": "嘉兴",
+   "position": "管培生：住宅项目管理岗、非住项目管理岗",
+   "post_date": "2026-10-12",
+   "deadline": "招满为止",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://mp.weixin.qq.com/s/iVtuuNVT4khwwDzsLqp_wQ",
+   "notice_url": "https://mp.weixin.qq.com/s/iVtuuNVT4khwwDzsLqp_wQ",
+   "id": "4ad08926dac7cf4e"
+  },
+  "5c63742bc5b2b244": {
+   "source": "youoffer",
+   "name": "甘肃中核弘源企业管理有限公司",
+   "company_type": "央国企",
+   "location": "嘉峪关",
+   "position": "职能管理类、财务审计类、专业技术类、专业技能类",
+   "post_date": "2026-10-12",
+   "deadline": "招满为止",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://xxpt.zhhy.cn/mobilemode/mobile/view.html?appHomepageId=21&mTokenFrom=anonymous&mToken=27D785485F8E6D248954B6B6AACC963C&unloadjem=1",
+   "notice_url": "https://mp.weixin.qq.com/s/k8fp9IU1WI6T960tmHGuoQ",
+   "id": "5c63742bc5b2b244"
+  },
+  "d07624b6096a24d9": {
+   "source": "youoffer",
+   "name": "南通对外贸易集团",
+   "company_type": "央国企",
+   "location": "南通",
+   "position": "展会营销职员（附件注明招收26届毕业生）",
+   "post_date": "2026-10-12",
+   "deadline": "2026-10-22",
+   "recruit_type": "秋招",
+   "target_years": "2026届",
+   "apply_url": "https://ntjob.nantong.cn/pages/information/exam-detail.html?id=3227&sessionid=",
+   "notice_url": "https://mp.weixin.qq.com/s/Akau2_LYB2fdGrgaYTQXYA",
+   "id": "d07624b6096a24d9"
   }
  },
  "pages_done": [
@@ -210256,7 +210340,10 @@
   448,
   449,
   450,
-  451
+  451,
+  452,
+  453,
+  454
  ],
- "last_run": "2026-10-12 01:55:36"
+ "last_run": "2026-10-12 10:00:01"
 }
