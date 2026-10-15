@@ -41,7 +41,7 @@
       "id": "1283126460798018560",
       "title": "技术研究-高性能计算方向",
       "project": "应届毕业生",
-      "location": "深圳总部 北京 上海 广州 成都 合肥",
+      "location": "深圳总部 北京 上海 广州 成都",
       "first_seen": "2026-10-10",
       "last_seen": "2026-10-15",
       "url": "https://join.qq.com/post_detail.html?postid=1283126460798018560"
@@ -3448,6 +3448,24 @@
       "last_seen": "2026-10-15",
       "url": "https://join.qq.com/post_detail.html?postid=1307787912720646144"
     },
+    "1307853575103414272": {
+      "id": "1307853575103414272",
+      "title": "微信视觉-全模态内容理解与推理研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "url": "https://join.qq.com/post_detail.html?postid=1307853575103414272"
+    },
+    "1307853584876142592": {
+      "id": "1307853584876142592",
+      "title": "微信视觉WeMM-Embedding 全模态内容理解研究",
+      "project": "青云计划-应届生",
+      "location": "北京",
+      "first_seen": "2026-10-15",
+      "last_seen": "2026-10-15",
+      "url": "https://join.qq.com/post_detail.html?postid=1307853584876142592"
+    },
     "1828316532829085696": {
       "id": "1828316532829085696",
       "title": "Associate Solution Architect 103937",
@@ -3592,15 +3610,6 @@
       "last_seen": "2026-10-15",
       "url": "https://join.qq.com/post_detail.html?postid=2069546082903441408"
     },
-    "1896460559981780992": {
-      "id": "1896460559981780992",
-      "title": "Senior Researcher, Natural Language Processing 104948",
-      "project": "青云计划-应届生",
-      "location": "Singapore-CapitaSky",
-      "first_seen": "2026-10-14",
-      "last_seen": "2026-10-15",
-      "url": "https://join.qq.com/post_detail.html?postid=1896460559981780992"
-    },
     "2108215878486245376": {
       "id": "2108215878486245376",
       "title": "Senior Interactive Vision Model Researcher 108201",
@@ -3609,6 +3618,15 @@
       "first_seen": "2026-10-10",
       "last_seen": "2026-10-15",
       "url": "https://join.qq.com/post_detail.html?postid=2108215878486245376"
+    },
+    "1896460559981780992": {
+      "id": "1896460559981780992",
+      "title": "Senior Researcher, Natural Language Processing 104948",
+      "project": "青云计划-应届生",
+      "location": "Singapore-CapitaSky",
+      "first_seen": "2026-10-14",
+      "last_seen": "2026-10-15",
+      "url": "https://join.qq.com/post_detail.html?postid=1896460559981780992"
     },
     "2079542260772548608": {
       "id": "2079542260772548608",
