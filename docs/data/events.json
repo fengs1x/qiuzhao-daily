@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-15T21:49:40+08:00",
+  "generated_at": "2026-10-16T08:56:04+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 50,
+  "count": 51,
   "events": [
     {
       "id": "5430",
@@ -238,6 +238,13 @@
       "event_at": "2026-10-21T15:55",
       "place": "北辰校区教学楼12-D103",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5369.html"
+    },
+    {
+      "id": "5450",
+      "title": "安徽叉车集团有限责任公司（合力叉车）2027届校园招聘宣讲会",
+      "event_at": "2026-10-21T16:00",
+      "place": "北辰校区教学楼12-D106",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5450.html"
     },
     {
       "id": "5427",
