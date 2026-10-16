@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16T08:56:04+08:00",
+  "generated_at": "2026-10-16T13:18:52+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 51,
+  "count": 52,
   "events": [
     {
       "id": "5430",
@@ -161,6 +161,13 @@
       "event_at": "2026-10-19T15:55",
       "place": "北辰校区教学楼12-A102",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5435.html"
+    },
+    {
+      "id": "5451",
+      "title": "中铁隧道局集团有限公司2027届高校毕业生校园招聘",
+      "event_at": "2026-10-19T18:40",
+      "place": "北辰校区教学楼12-A106",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5451.html"
     },
     {
       "id": "5374",
