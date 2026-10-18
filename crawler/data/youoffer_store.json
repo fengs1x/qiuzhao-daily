@@ -215739,6 +215739,62 @@
    "apply_url": "http://招满为止",
    "notice_url": "https://sinochem.hotjob.cn",
    "id": "0d9a8c448f4b7420"
+  },
+  "05bde0750932aeed": {
+   "source": "youoffer",
+   "name": "中国中化\\\\",
+   "company_type": "昊华公司",
+   "location": "央国企",
+   "position": "2027届",
+   "post_date": "-0001-11-30",
+   "deadline": "2026-09-16 15:01:34",
+   "recruit_type": "北京,杭州,绍兴,成都,自贡,青岛,兰州,株洲,洛阳,西安,咸阳,大连,沈阳,葫芦岛,桂林,九江,天津,湖州,眉山,郴州,荆州,黄冈,文昌,西昌,招远,太仓",
+   "target_years": "秋招",
+   "apply_url": "http://2026-10-28",
+   "notice_url": "https://sinochem.hotjob.cn/SU610b91ee0dcad4106ff11c21/pb/school.html?orgCode=0769",
+   "id": "05bde0750932aeed"
+  },
+  "3f4a4858c21a8778": {
+   "source": "youoffer",
+   "name": "中国中化\\\\",
+   "company_type": "中化能源",
+   "location": "央国企",
+   "position": "2027届",
+   "post_date": "-0001-11-30",
+   "deadline": "2026-09-16 15:01:34",
+   "recruit_type": "北京,福建,广东,河北,上海",
+   "target_years": "秋招",
+   "apply_url": "http://2026-12-31",
+   "notice_url": "https://sinochem.hotjob.cn/SU611a641a0dcad4106f04950e/mc/position/campus?sharePostKey=01e83749786d443ba4dc00c5f8863731",
+   "id": "3f4a4858c21a8778"
+  },
+  "0dc6c3403506a1ad": {
+   "source": "youoffer",
+   "name": "中国中化\\\\",
+   "company_type": "装备公司",
+   "location": "央国企",
+   "position": "2027届",
+   "post_date": "-0001-11-30",
+   "deadline": "2026-09-29 13:48:43",
+   "recruit_type": "北京,上海,兰州,南京,苏州,益阳,桂林,嘉兴,嘉兴等地,德国,美国,墨西哥,日本,斯洛伐克",
+   "target_years": "秋招",
+   "apply_url": "http://招满为止",
+   "notice_url": "https://sinochem.hotjob.cn/SU611a641a0dcad4106f04950e/mc/position/campus?sharePostKey=d4f6d018b04c4e45b598a101de940239",
+   "id": "0dc6c3403506a1ad"
+  },
+  "de3fae6349a97834": {
+   "source": "youoffer",
+   "name": "中国中化\\\\",
+   "company_type": "中化环境",
+   "location": "央国企",
+   "position": "2027届",
+   "post_date": "-0001-11-30",
+   "deadline": "2026-09-18 14:29:50",
+   "recruit_type": "北京,连云港,青海",
+   "target_years": "秋招",
+   "apply_url": "http://招满为止",
+   "notice_url": "https://sinochem.hotjob.cn/SU610b91ee0dcad4106ff11c21/pb/school.html?orgCode=065",
+   "id": "de3fae6349a97834"
   }
  },
  "pages_done": [
@@ -216258,7 +216314,8 @@
   514,
   515,
   516,
-  517
+  517,
+  518
  ],
- "last_run": "2026-10-18 11:53:12"
+ "last_run": "2026-10-18 16:14:04"
 }
