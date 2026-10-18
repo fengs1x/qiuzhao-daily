@@ -1,26 +1,8 @@
 {
-  "generated_at": "2026-10-18T08:32:03+08:00",
+  "generated_at": "2026-10-18T13:18:22+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 38,
+  "count": 36,
   "events": [
-    {
-      "id": "5428",
-      "title": "中国石化齐鲁石化公司2027年校园招聘",
-      "event_at": "2026-10-17T10:25",
-      "place": "北辰校区教学楼12-C111",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5428.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5416",
-      "title": "飒智2027届校园宣讲会",
-      "event_at": "2026-10-17T10:25",
-      "place": "北辰校区教学楼12-C108",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5416.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5418",
       "title": "四川郎酒股份有限公司2027届秋季校园招聘",
@@ -62,14 +44,18 @@
       "title": "歌尔股份2027届歌尔之翼宣讲会",
       "event_at": "2026-10-19T15:55",
       "place": "北辰校区教学楼12-A102",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5435.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5435.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5451",
       "title": "中铁隧道局集团有限公司2027届高校毕业生校园招聘",
       "event_at": "2026-10-19T18:40",
       "place": "北辰校区教学楼12-A106",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5451.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5451.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5374",
