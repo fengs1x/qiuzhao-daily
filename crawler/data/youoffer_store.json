@@ -215697,6 +215697,48 @@
    "apply_url": "https://bm.nbks.cn/",
    "notice_url": "https://gzw.ningbo.gov.cn/col/col1229116730/art/2026/art_cc4141162212446d8e179a0ce8a50886.html",
    "id": "2da0828c39ec1abe"
+  },
+  "3c1544260b360339": {
+   "source": "youoffer",
+   "name": "汇丰科技",
+   "company_type": "外企/合资",
+   "location": "广州,西安,上海",
+   "position": "计算机科学\\\\",
+   "post_date": "-0001-11-30",
+   "deadline": "数学及其他相关技术专业",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "http://2026-09-08%2014:24:45",
+   "notice_url": "http://招满为止",
+   "id": "3c1544260b360339"
+  },
+  "193c0a82050a7815": {
+   "source": "youoffer",
+   "name": "豹趣科技",
+   "company_type": "民企",
+   "location": "珠海",
+   "position": "AI产品经理、AI开发工程师、服务端开发工程师\\\\",
+   "post_date": "-0001-11-30",
+   "deadline": "2026-09-05 11:15:36",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "http://招满为止",
+   "notice_url": "https://docs.qq.com/form/page/DRnVwVEF2a0VOb2p1#/fill",
+   "id": "193c0a82050a7815"
+  },
+  "0d9a8c448f4b7420": {
+   "source": "youoffer",
+   "name": "中国中化\\\\",
+   "company_type": "氯碱事业部",
+   "location": "央国企",
+   "position": "2027届",
+   "post_date": "-0001-11-30",
+   "deadline": "2026-09-16 15:01:34",
+   "recruit_type": "北京,上海,沈阳,德州,淄博,大同,焦作,百色,自贡,泉州,齐齐哈尔",
+   "target_years": "秋招",
+   "apply_url": "http://招满为止",
+   "notice_url": "https://sinochem.hotjob.cn",
+   "id": "0d9a8c448f4b7420"
   }
  },
  "pages_done": [
@@ -216213,7 +216255,10 @@
   511,
   512,
   513,
-  514
+  514,
+  515,
+  516,
+  517
  ],
- "last_run": "2026-10-18 05:17:09"
+ "last_run": "2026-10-18 11:53:12"
 }
