@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-19T08:38:00+08:00",
+  "generated_at": "2026-10-19T13:31:28+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 33,
+  "count": 32,
   "events": [
     {
       "id": "5429",
@@ -40,15 +40,6 @@
       "pdf_facts": []
     },
     {
-      "id": "5220",
-      "title": "北汽福田汽车股份有限公司2027秋季招聘",
-      "event_at": "2026-10-19T18:40",
-      "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5220.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
       "id": "5436",
       "title": "中国邮政集团有限公司河北省分公司 2027年度秋季校园招聘",
       "event_at": "2026-10-20T14:30",
@@ -62,21 +53,9 @@
       "title": "华天科技集团2027届校园招聘会",
       "event_at": "2026-10-20T15:55",
       "place": "北辰校区教学楼12-C109",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5183.html"
-    },
-    {
-      "id": "5391",
-      "title": "惠州亿纬锂能股份有限公司2027届校园招聘宣讲会",
-      "event_at": "2026-10-20T18:40",
-      "place": "北辰校区教学楼12-C109",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5391.html"
-    },
-    {
-      "id": "5221",
-      "title": "北汽福田汽车股份有限公司2027秋季招聘",
-      "event_at": "2026-10-20T18:40",
-      "place": "红桥校区南院九教9-0105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5221.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5183.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5161",
@@ -149,13 +128,6 @@
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5449.html"
     },
     {
-      "id": "5363",
-      "title": "可靠起点，无限未来 | 临工重机2027全球校园招聘",
-      "event_at": "2026-10-22T18:40",
-      "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5363.html"
-    },
-    {
       "id": "5437",
       "title": "南京天加环境科技有限公司2027届校招宣讲会-河北工业大学站",
       "event_at": "2026-10-23T14:00",
@@ -196,6 +168,20 @@
       "event_at": "2026-10-23T15:55",
       "place": "北辰校区教学楼12-C107",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5434.html"
+    },
+    {
+      "id": "5431",
+      "title": "中国能建中电工程华北院2027秋季校园招聘启事",
+      "event_at": "2026-10-26T14:00",
+      "place": "北辰校区教学楼12-D114",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5431.html"
+    },
+    {
+      "id": "5452",
+      "title": "深能北方能源控股有限公司2027届秋季校园招聘宣讲会",
+      "event_at": "2026-10-26T18:40",
+      "place": "北辰校区教学楼12-C112",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5452.html"
     },
     {
       "id": "5448",
@@ -245,6 +231,13 @@
       "event_at": "2026-10-30T18:40",
       "place": "北辰校区教学楼12-C112",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5355.html"
+    },
+    {
+      "id": "5447",
+      "title": "宝钢湛江钢铁有限公司2027届校园招聘",
+      "event_at": "2026-11-02T18:40",
+      "place": "北辰校区教学楼12-A105",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5447.html"
     }
   ]
 }
