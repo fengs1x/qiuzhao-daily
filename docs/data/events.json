@@ -1,26 +1,8 @@
 {
-  "generated_at": "2026-10-20T16:03:57+08:00",
+  "generated_at": "2026-10-20T22:00:11+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 31,
+  "count": 29,
   "events": [
-    {
-      "id": "5451",
-      "title": "中铁隧道局集团有限公司2027届高校毕业生校园招聘",
-      "event_at": "2026-10-19T18:40",
-      "place": "北辰校区教学楼12-A106",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5451.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5374",
-      "title": "中车株洲电机有限公司2027届校园招聘",
-      "event_at": "2026-10-19T18:40",
-      "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5374.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5436",
       "title": "中国邮政集团有限公司河北省分公司 2027年度秋季校园招聘",
@@ -62,14 +44,18 @@
       "title": "北汽集团2027届全球校园招聘",
       "event_at": "2026-10-21T14:00",
       "place": "北辰校区教学楼12-D109",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5233.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5233.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5438",
       "title": "中石化重型起重运输工程有限责任公司2026年校园招聘",
       "event_at": "2026-10-21T15:55",
       "place": "北辰校区教学楼12-C108",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5438.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5438.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5369",
