@@ -1,26 +1,8 @@
 {
-  "generated_at": "2026-10-20T09:23:19+08:00",
+  "generated_at": "2026-10-20T16:03:57+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 33,
+  "count": 31,
   "events": [
-    {
-      "id": "5429",
-      "title": "平安产险北分2027届校园招聘",
-      "event_at": "2026-10-19T14:00",
-      "place": "北辰校区教学楼12-C213",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5429.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5435",
-      "title": "歌尔股份2027届歌尔之翼宣讲会",
-      "event_at": "2026-10-19T15:55",
-      "place": "北辰校区教学楼12-A102",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5435.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5451",
       "title": "中铁隧道局集团有限公司2027届高校毕业生校园招聘",
@@ -62,14 +44,18 @@
       "title": "顶流鑫星 · 登峰造机——鑫磊股份2027届秋季校园招聘会",
       "event_at": "2026-10-20T18:40",
       "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5161.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5161.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5377",
       "title": "万般热爱 向新而生-珠海万达商管2027届校园招聘启动！",
       "event_at": "2026-10-21T14:00",
       "place": "红桥校区南院九教9-0101调整至红桥校区东院文法学院模拟法庭",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5377.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5377.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5233",
