@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-10-21T16:09:16+08:00",
+  "generated_at": "2026-10-21T22:16:03+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 27,
+  "count": 26,
   "events": [
-    {
-      "id": "5161",
-      "title": "顶流鑫星 · 登峰造机——鑫磊股份2027届秋季校园招聘会",
-      "event_at": "2026-10-20T18:40",
-      "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5161.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5377",
       "title": "万般热爱 向新而生-珠海万达商管2027届校园招聘启动！",
@@ -62,7 +53,9 @@
       "title": "恒逸文莱二期2027年校园招聘宣讲会",
       "event_at": "2026-10-21T18:40",
       "place": "北辰校区教学楼12-A112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5427.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5427.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5413",
