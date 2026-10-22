@@ -1,26 +1,8 @@
 {
-  "generated_at": "2026-10-22T16:09:02+08:00",
+  "generated_at": "2026-10-22T22:15:26+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 21,
+  "count": 19,
   "events": [
-    {
-      "id": "5427",
-      "title": "恒逸文莱二期2027年校园招聘宣讲会",
-      "event_at": "2026-10-21T18:40",
-      "place": "北辰校区教学楼12-A112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5427.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5413",
-      "title": "龙蟠科技2027届校园招聘简章",
-      "event_at": "2026-10-21T18:40",
-      "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5413.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5409",
       "title": "TÜV SÜD 校园招聘",
@@ -62,14 +44,18 @@
       "title": "国网信息通信产业集团有限公司2027年校园招聘公告",
       "event_at": "2026-10-23T14:00",
       "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5385.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5385.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5278",
       "title": "“技术不枯竭 未来不设限”松正集团2027届校招宣讲会",
       "event_at": "2026-10-23T14:00",
       "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5278.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5278.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5215",
