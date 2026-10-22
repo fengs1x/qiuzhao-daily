@@ -1,53 +1,8 @@
 {
-  "generated_at": "2026-10-22T09:07:02+08:00",
+  "generated_at": "2026-10-22T16:09:02+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 26,
+  "count": 21,
   "events": [
-    {
-      "id": "5377",
-      "title": "万般热爱 向新而生-珠海万达商管2027届校园招聘启动！",
-      "event_at": "2026-10-21T14:00",
-      "place": "红桥校区南院九教9-0101调整至红桥校区东院文法学院模拟法庭",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5377.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5233",
-      "title": "北汽集团2027届全球校园招聘",
-      "event_at": "2026-10-21T14:00",
-      "place": "北辰校区教学楼12-D109",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5233.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5438",
-      "title": "中石化重型起重运输工程有限责任公司2026年校园招聘",
-      "event_at": "2026-10-21T15:55",
-      "place": "北辰校区教学楼12-C108",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5438.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5369",
-      "title": "陕西汉德车桥有限公司2027届校园招聘宣讲会",
-      "event_at": "2026-10-21T15:55",
-      "place": "北辰校区教学楼12-D103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5369.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5450",
-      "title": "安徽叉车集团有限责任公司（合力叉车）2027届校园招聘宣讲会",
-      "event_at": "2026-10-21T16:00",
-      "place": "北辰校区教学楼12-D106",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5450.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5427",
       "title": "恒逸文莱二期2027年校园招聘宣讲会",
@@ -62,35 +17,45 @@
       "title": "龙蟠科技2027届校园招聘简章",
       "event_at": "2026-10-21T18:40",
       "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5413.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5413.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5409",
       "title": "TÜV SÜD 校园招聘",
       "event_at": "2026-10-22T14:00",
       "place": "北辰校区教学楼12-C207",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5409.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5409.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5449",
       "title": "北京中恒博瑞数字电力科技有限公司2027届校园招聘",
       "event_at": "2026-10-22T18:40",
       "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5449.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5449.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5437",
       "title": "南京天加环境科技有限公司2027届校招宣讲会-河北工业大学站",
       "event_at": "2026-10-23T14:00",
       "place": "北辰校区教学楼12-A112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5437.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5437.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5424",
       "title": "中建一局集团第二建筑有限公司2027届校园招聘",
       "event_at": "2026-10-23T14:00",
       "place": "北辰校区教学楼12-C109",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5424.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5424.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5385",
