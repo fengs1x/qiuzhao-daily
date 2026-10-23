@@ -1477,15 +1477,6 @@
       "last_seen": "2026-10-23",
       "url": "https://join.qq.com/post_detail.html?postid=1274481034578500709"
     },
-    "1274481034578500719": {
-      "id": "1274481034578500719",
-      "title": "微信搜索-大模型AI搜索研究与落地",
-      "project": "青云计划-应届生",
-      "location": "北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-23",
-      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500719"
-    },
     "1274481034578500720": {
       "id": "1274481034578500720",
       "title": "微信搜索-强化学习算法研究",
@@ -1782,15 +1773,6 @@
       "first_seen": "2026-10-10",
       "last_seen": "2026-10-23",
       "url": "https://join.qq.com/post_detail.html?postid=1274481034578500759"
-    },
-    "1274481034578500760": {
-      "id": "1274481034578500760",
-      "title": "微信搜索-大模型在搜索系统中的应用落地研究",
-      "project": "青云计划-应届生",
-      "location": "北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-23",
-      "url": "https://join.qq.com/post_detail.html?postid=1274481034578500760"
     },
     "1274481034578500837": {
       "id": "1274481034578500837",
@@ -2575,24 +2557,6 @@
       "last_seen": "2026-10-23",
       "url": "https://join.qq.com/post_detail.html?postid=1279259082272121863"
     },
-    "1279259082272121864": {
-      "id": "1279259082272121864",
-      "title": "多模态大模型/AI算子智能评测体系构建与Agent自动化升级",
-      "project": "青云计划-应届生",
-      "location": "深圳总部",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-23",
-      "url": "https://join.qq.com/post_detail.html?postid=1279259082272121864"
-    },
-    "1279259082272121865": {
-      "id": "1279259082272121865",
-      "title": "多模态大模型数据质量框架构建与优化",
-      "project": "青云计划-应届生",
-      "location": "深圳总部",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-23",
-      "url": "https://join.qq.com/post_detail.html?postid=1279259082272121865"
-    },
     "1279259082272121866": {
       "id": "1279259082272121866",
       "title": "面向游戏领域的长程VLM训练和优化",
@@ -2601,15 +2565,6 @@
       "first_seen": "2026-10-10",
       "last_seen": "2026-10-23",
       "url": "https://join.qq.com/post_detail.html?postid=1279259082272121866"
-    },
-    "1279259082272121867": {
-      "id": "1279259082272121867",
-      "title": "基于AI的渲染管线优化",
-      "project": "青云计划-应届生",
-      "location": "杭州",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-23",
-      "url": "https://join.qq.com/post_detail.html?postid=1279259082272121867"
     },
     "1279259082272121868": {
       "id": "1279259082272121868",
@@ -3052,15 +3007,6 @@
       "last_seen": "2026-10-23",
       "url": "https://join.qq.com/post_detail.html?postid=1291815835345992704"
     },
-    "1291815835345992705": {
-      "id": "1291815835345992705",
-      "title": "元宝搜索—搜索大模型推理加速研究",
-      "project": "青云计划-应届生",
-      "location": "北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-23",
-      "url": "https://join.qq.com/post_detail.html?postid=1291815835345992705"
-    },
     "1291815835345992706": {
       "id": "1291815835345992706",
       "title": "元宝—VLM think with image研究",
@@ -3349,15 +3295,6 @@
       "last_seen": "2026-10-23",
       "url": "https://join.qq.com/post_detail.html?postid=1294697193747709952"
     },
-    "1294697193747709953": {
-      "id": "1294697193747709953",
-      "title": "腾讯会议-鸡尾酒场景下的多模态说话人分离技术研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京 上海",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-23",
-      "url": "https://join.qq.com/post_detail.html?postid=1294697193747709953"
-    },
     "1294697193747709954": {
       "id": "1294697193747709954",
       "title": "元宝-多模态对话系统研究",
@@ -3492,6 +3429,15 @@
       "first_seen": "2026-10-20",
       "last_seen": "2026-10-23",
       "url": "https://join.qq.com/post_detail.html?postid=1309860403001884673"
+    },
+    "1311025530992286720": {
+      "id": "1311025530992286720",
+      "title": "腾讯云MaaS-大模型智能路由技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "url": "https://join.qq.com/post_detail.html?postid=1311025530992286720"
     },
     "1877601288456282112": {
       "id": "1877601288456282112",

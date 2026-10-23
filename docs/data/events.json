@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-10-23T09:07:36+08:00",
+  "generated_at": "2026-10-23T16:07:34+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 19,
+  "count": 21,
   "events": [
-    {
-      "id": "5409",
-      "title": "TÜV SÜD 校园招聘",
-      "event_at": "2026-10-22T14:00",
-      "place": "北辰校区教学楼12-C207",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5409.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5449",
       "title": "北京中恒博瑞数字电力科技有限公司2027届校园招聘",
@@ -62,7 +53,9 @@
       "title": "亨嘉之会 通联未来|亨通集团2027届校园招聘",
       "event_at": "2026-10-23T14:00",
       "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5215.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5215.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5434",
@@ -128,11 +121,25 @@
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5440.html"
     },
     {
+      "id": "5462",
+      "title": "海豚计划-德邦快递27届校园招聘",
+      "event_at": "2026-10-30T15:55",
+      "place": "北辰校区教学楼12-A106",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5462.html"
+    },
+    {
       "id": "5355",
       "title": "向世界 挥一拳 三一集团2027届秋季校园招聘正式启动",
       "event_at": "2026-10-30T18:40",
       "place": "北辰校区教学楼12-C112",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5355.html"
+    },
+    {
+      "id": "5460",
+      "title": "中国电子系统工程第四建设有限公司2027届校园招聘",
+      "event_at": "2026-11-02T18:40",
+      "place": "北辰校区教学楼12-C109",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5460.html"
     },
     {
       "id": "5447",
@@ -147,6 +154,13 @@
       "event_at": "2026-11-03T18:40",
       "place": "北辰校区教学楼12-B106",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5445.html"
+    },
+    {
+      "id": "5461",
+      "title": "天津数字经济产业集团有限公司-2027年校园招聘",
+      "event_at": "2026-11-06T18:40",
+      "place": "北辰校区教学楼12-A105",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5461.html"
     }
   ]
 }
