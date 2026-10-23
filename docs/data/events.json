@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-10-23T16:07:34+08:00",
+  "generated_at": "2026-10-23T21:57:59+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
   "count": 21,
   "events": [
-    {
-      "id": "5449",
-      "title": "北京中恒博瑞数字电力科技有限公司2027届校园招聘",
-      "event_at": "2026-10-22T18:40",
-      "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5449.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5437",
       "title": "南京天加环境科技有限公司2027届校招宣讲会-河北工业大学站",
@@ -62,7 +53,9 @@
       "title": "恒星计划 智启未来 | 2027经纬恒润校招宣讲会",
       "event_at": "2026-10-23T15:55",
       "place": "北辰校区教学楼12-C107",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5434.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5434.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5431",
@@ -133,6 +126,13 @@
       "event_at": "2026-10-30T18:40",
       "place": "北辰校区教学楼12-C112",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5355.html"
+    },
+    {
+      "id": "5463",
+      "title": "中航光电科技股份有限公司2027届秋季招聘宣讲会",
+      "event_at": "2026-10-31T14:00",
+      "place": "北辰校区教学楼12-C112",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5463.html"
     },
     {
       "id": "5460",
