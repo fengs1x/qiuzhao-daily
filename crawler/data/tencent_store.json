@@ -905,7 +905,7 @@
       "id": "1287398722585903104",
       "title": "算法-强化学习方向",
       "project": "应届毕业生",
-      "location": "深圳总部 北京",
+      "location": "深圳总部",
       "first_seen": "2026-10-10",
       "last_seen": "2026-10-27",
       "url": "https://join.qq.com/post_detail.html?postid=1287398722585903104"
@@ -3106,78 +3106,6 @@
       "last_seen": "2026-10-27",
       "url": "https://join.qq.com/post_detail.html?postid=1292597531922250759"
     },
-    "1292723595709365248": {
-      "id": "1292723595709365248",
-      "title": "混元-评测集高效生产与合成研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京 上海",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365248"
-    },
-    "1292723595709365249": {
-      "id": "1292723595709365249",
-      "title": "混元-评测度量科学与有效性研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京 上海",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365249"
-    },
-    "1292723595709365250": {
-      "id": "1292723595709365250",
-      "title": "混元-Agent底线与执行安全评估研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京 上海",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365250"
-    },
-    "1292723595709365251": {
-      "id": "1292723595709365251",
-      "title": "混元-大模型前沿能力、体验与可信度评测研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京 上海",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365251"
-    },
-    "1292723595709365252": {
-      "id": "1292723595709365252",
-      "title": "混元-预训练数据解析清洗",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365252"
-    },
-    "1292723595709365253": {
-      "id": "1292723595709365253",
-      "title": "混元-大规模轨迹质量评估与价值挖掘研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365253"
-    },
-    "1292723595709365254": {
-      "id": "1292723595709365254",
-      "title": "混元-大模型后训练质检策略研究（Agent方向）",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365254"
-    },
-    "1292723595709365255": {
-      "id": "1292723595709365255",
-      "title": "混元-人机协同的专家生产数据质量评估方案研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365255"
-    },
     "1292723595709365256": {
       "id": "1292723595709365256",
       "title": "原生多模态(Any-to-Any模型)预训练及数据构建范式研究",
@@ -3205,15 +3133,6 @@
       "last_seen": "2026-10-27",
       "url": "https://join.qq.com/post_detail.html?postid=1292723595709365258"
     },
-    "1292723595709365259": {
-      "id": "1292723595709365259",
-      "title": "大语言模型数据质量优化与数据实验",
-      "project": "青云计划-应届生",
-      "location": "深圳总部",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365259"
-    },
     "1292723595709365260": {
       "id": "1292723595709365260",
       "title": "GUIAgent Bench及数据构建方式研究",
@@ -3231,15 +3150,6 @@
       "first_seen": "2026-10-10",
       "last_seen": "2026-10-27",
       "url": "https://join.qq.com/post_detail.html?postid=1292723595709365261"
-    },
-    "1292723595709365262": {
-      "id": "1292723595709365262",
-      "title": "下一代大语言模型主要预训练数据提升空间",
-      "project": "青云计划-应届生",
-      "location": "深圳总部",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1292723595709365262"
     },
     "1292723595709365263": {
       "id": "1292723595709365263",
@@ -3340,24 +3250,6 @@
       "last_seen": "2026-10-27",
       "url": "https://join.qq.com/post_detail.html?postid=1296893677230555136"
     },
-    "1297540897470382080": {
-      "id": "1297540897470382080",
-      "title": "混元-基于轨迹的大模型过程级能力评估研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1297540897470382080"
-    },
-    "1297696815114027008": {
-      "id": "1297696815114027008",
-      "title": "混元-面向大模型训练的多领域专家数据体系与生产研究",
-      "project": "青云计划-应届生",
-      "location": "深圳总部 北京",
-      "first_seen": "2026-10-10",
-      "last_seen": "2026-10-27",
-      "url": "https://join.qq.com/post_detail.html?postid=1297696815114027008"
-    },
     "1307787903950356480": {
       "id": "1307787903950356480",
       "title": "微信 视频号-跨域多模态生成式推荐和推荐大模型技术研究",
@@ -3438,6 +3330,15 @@
       "first_seen": "2026-10-23",
       "last_seen": "2026-10-27",
       "url": "https://join.qq.com/post_detail.html?postid=1311025530992286720"
+    },
+    "1312405648851787776": {
+      "id": "1312405648851787776",
+      "title": "面向海量AI Agent场景的动态内存超卖技术研究",
+      "project": "青云计划-应届生",
+      "location": "深圳总部 北京",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "url": "https://join.qq.com/post_detail.html?postid=1312405648851787776"
     },
     "1877601288456282112": {
       "id": "1877601288456282112",
