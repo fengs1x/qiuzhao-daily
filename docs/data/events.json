@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T10:18:05+08:00",
+  "generated_at": "2026-10-30T17:19:20+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 8,
+  "count": 11,
   "events": [
     {
       "id": "5446",
@@ -40,6 +40,15 @@
       "pdf_facts": []
     },
     {
+      "id": "5464",
+      "title": "德邦快递27届校招-河北工业大学专场",
+      "event_at": "2026-11-02T16:00",
+      "place": "北辰校区教学楼12-A102",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5464.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
+    },
+    {
       "id": "5460",
       "title": "中国电子系统工程第四建设有限公司2027届校园招聘",
       "event_at": "2026-11-02T18:40",
@@ -53,9 +62,7 @@
       "title": "宝钢湛江钢铁有限公司2027届校园招聘",
       "event_at": "2026-11-02T18:40",
       "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5447.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5447.html"
     },
     {
       "id": "5445",
@@ -63,6 +70,20 @@
       "event_at": "2026-11-03T18:40",
       "place": "北辰校区教学楼12-B106",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5445.html"
+    },
+    {
+      "id": "5470",
+      "title": "迈安德集团2027校园招聘宣讲会",
+      "event_at": "2026-11-04T14:00",
+      "place": "北辰校区教学楼12-D102",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5470.html"
+    },
+    {
+      "id": "5471",
+      "title": "北汽福田汽车股份有限公司2027年校园招聘宣讲会",
+      "event_at": "2026-11-06T14:00",
+      "place": "北辰校区教学楼12-C112",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5471.html"
     },
     {
       "id": "5461",
