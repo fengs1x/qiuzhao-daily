@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-10-31T17:05:52+08:00",
+  "generated_at": "2026-10-31T23:56:45+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 9,
+  "count": 8,
   "events": [
-    {
-      "id": "5355",
-      "title": "向世界 挥一拳 三一集团2027届秋季校园招聘正式启动",
-      "event_at": "2026-10-30T18:40",
-      "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5355.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5463",
       "title": "中航光电科技股份有限公司2027届秋季招聘宣讲会",
@@ -62,7 +53,23 @@
       "title": "迈安德集团2027校园招聘宣讲会",
       "event_at": "2026-11-04T14:00",
       "place": "北辰校区教学楼12-D102",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5470.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5470.html",
+      "pdf_attachments": [
+        "https://career.hebut.edu.cn/Upload/file/20261030/1793339031692651.pdf"
+      ],
+      "pdf_facts": [
+        {
+          "url": "https://career.hebut.edu.cn/Upload/file/20261030/1793339031692651.pdf",
+          "pages": 3,
+          "target_years": [],
+          "degree_mentions": [
+            "博士",
+            "本科",
+            "硕士"
+          ],
+          "text_available": true
+        }
+      ]
     },
     {
       "id": "5471",
