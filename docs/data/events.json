@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-01T09:41:41+08:00",
+  "generated_at": "2026-11-01T17:55:27+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 8,
+  "count": 7,
   "events": [
-    {
-      "id": "5463",
-      "title": "中航光电科技股份有限公司2027届秋季招聘宣讲会",
-      "event_at": "2026-10-31T14:00",
-      "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5463.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5464",
       "title": "德邦快递27届校招-河北工业大学专场",
@@ -76,7 +67,9 @@
       "title": "北汽福田汽车股份有限公司2027年校园招聘宣讲会",
       "event_at": "2026-11-06T14:00",
       "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5471.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5471.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5461",
