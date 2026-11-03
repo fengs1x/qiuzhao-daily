@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T04:36:08+08:00",
+  "generated_at": "2026-11-03T11:48:33+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 10,
+  "count": 15,
   "events": [
     {
       "id": "5464",
@@ -84,6 +84,41 @@
       "event_at": "2026-11-06T18:40",
       "place": "北辰校区教学楼12-A105",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5461.html"
+    },
+    {
+      "id": "5476",
+      "title": "“键证青春，芯向未来”青禾晶元2027届校园招聘宣讲会",
+      "event_at": "2026-11-10T18:40",
+      "place": "北辰校区教学楼12-A103",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5476.html"
+    },
+    {
+      "id": "5467",
+      "title": "斯达半导体27届校招",
+      "event_at": "2026-11-12T18:40",
+      "place": "北辰校区教学楼12-A105",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5467.html"
+    },
+    {
+      "id": "5475",
+      "title": "中铁建工集团第三建设有限公司2027校园招聘",
+      "event_at": "2026-11-13T14:00",
+      "place": "北辰校区教学楼12-A103",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5475.html"
+    },
+    {
+      "id": "5473",
+      "title": "艾斯迪（天津）汽车零部件有限公司2027届校园招聘宣讲会",
+      "event_at": "2026-11-13T14:00",
+      "place": "北辰校区教学楼12-C109",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5473.html"
+    },
+    {
+      "id": "5472",
+      "title": "2027年安泰天龙钨钼科技有限公司校园招聘",
+      "event_at": "2026-11-13T14:00",
+      "place": "北辰校区教学楼12-C112",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5472.html"
     },
     {
       "id": "5459",
