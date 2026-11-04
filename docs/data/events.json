@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-04T18:11:04+08:00",
+  "generated_at": "2026-11-05T02:21:30+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 12,
+  "count": 11,
   "events": [
-    {
-      "id": "5445",
-      "title": "“不负韶华 润启新生”华润电力2027届秋季校园招聘",
-      "event_at": "2026-11-03T18:40",
-      "place": "北辰校区教学楼12-B106",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5445.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5474",
       "title": "中能建建筑集团有限公司2027届校园招聘",
@@ -76,7 +67,9 @@
       "title": "斯达半导体27届校招",
       "event_at": "2026-11-12T18:40",
       "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5467.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5467.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5475",
