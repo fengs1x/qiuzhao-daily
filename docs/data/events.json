@@ -1,40 +1,8 @@
 {
-  "generated_at": "2026-11-05T10:59:32+08:00",
+  "generated_at": "2026-11-05T18:22:26+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 11,
+  "count": 9,
   "events": [
-    {
-      "id": "5474",
-      "title": "中能建建筑集团有限公司2027届校园招聘",
-      "event_at": "2026-11-04T14:00",
-      "place": "北辰校区教学楼12-D106",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5474.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5470",
-      "title": "迈安德集团2027校园招聘宣讲会",
-      "event_at": "2026-11-04T14:00",
-      "place": "北辰校区教学楼12-D102",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5470.html",
-      "pdf_attachments": [
-        "https://career.hebut.edu.cn/Upload/file/20261030/1793339031692651.pdf"
-      ],
-      "pdf_facts": [
-        {
-          "url": "https://career.hebut.edu.cn/Upload/file/20261030/1793339031692651.pdf",
-          "pages": 3,
-          "target_years": [],
-          "degree_mentions": [
-            "博士",
-            "本科",
-            "硕士"
-          ],
-          "text_available": true
-        }
-      ]
-    },
     {
       "id": "5471",
       "title": "北汽福田汽车股份有限公司2027年校园招聘宣讲会",
@@ -76,14 +44,18 @@
       "title": "中铁建工集团第三建设有限公司2027校园招聘",
       "event_at": "2026-11-13T14:00",
       "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5475.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5475.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5473",
       "title": "艾斯迪（天津）汽车零部件有限公司2027届校园招聘宣讲会",
       "event_at": "2026-11-13T14:00",
       "place": "北辰校区教学楼12-C109",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5473.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5473.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5472",
