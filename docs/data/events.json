@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-07T10:28:57+08:00",
+  "generated_at": "2026-11-07T17:26:51+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 13,
+  "count": 12,
   "events": [
-    {
-      "id": "5471",
-      "title": "北汽福田汽车股份有限公司2027年校园招聘宣讲会",
-      "event_at": "2026-11-06T14:00",
-      "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5471.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5461",
       "title": "天津数字经济产业集团有限公司-2027年校园招聘",
@@ -62,7 +53,9 @@
       "title": "中建路桥集团有限公司2027届校园招聘",
       "event_at": "2026-11-13T14:00",
       "place": "红桥校区南院九教9-0103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5481.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5481.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5478",
