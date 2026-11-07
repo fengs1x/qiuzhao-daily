@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-07T17:26:51+08:00",
+  "generated_at": "2026-11-08T00:43:27+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 12,
+  "count": 11,
   "events": [
-    {
-      "id": "5461",
-      "title": "天津数字经济产业集团有限公司-2027年校园招聘",
-      "event_at": "2026-11-06T18:40",
-      "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5461.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5476",
       "title": "“键证青春，芯向未来”青禾晶元2027届校园招聘宣讲会",
@@ -62,7 +53,9 @@
       "title": "内蒙古北方重工业集团有限公司秋季招聘会",
       "event_at": "2026-11-13T14:00",
       "place": "北辰校区教学楼12-C113",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5478.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5478.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5475",
