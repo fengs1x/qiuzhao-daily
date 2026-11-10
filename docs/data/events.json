@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T05:13:15+08:00",
+  "generated_at": "2026-11-10T12:27:05+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 11,
+  "count": 16,
   "events": [
     {
       "id": "5476",
@@ -86,11 +86,46 @@
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5459.html"
     },
     {
+      "id": "5485",
+      "title": "中安广源2027校园招聘专场宣讲会",
+      "event_at": "2026-11-17T18:40",
+      "place": "北辰校区教学楼12-C110",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5485.html"
+    },
+    {
       "id": "5458",
       "title": "中国建筑科学研究院有限公司2027校园招聘",
       "event_at": "2026-11-17T18:40",
       "place": "北辰校区教学楼12-A105",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5458.html"
+    },
+    {
+      "id": "5484",
+      "title": "云尖信息2027届校园招聘宣讲会",
+      "event_at": "2026-11-19T14:00",
+      "place": "北辰校区教学楼12-C106",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5484.html"
+    },
+    {
+      "id": "5487",
+      "title": "北汽福田汽车股份有限公司2027秋季招聘",
+      "event_at": "2026-11-20T14:00",
+      "place": "红桥校区南院九教9-0105",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5487.html"
+    },
+    {
+      "id": "5486",
+      "title": "中大力德2027届校园招聘",
+      "event_at": "2026-11-20T14:00",
+      "place": "北辰校区教学楼12-A105",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5486.html"
+    },
+    {
+      "id": "5469",
+      "title": "“青春有诺，磷动未来”昆明川金诺化工2027届校招宣讲会",
+      "event_at": "2026-11-25T18:40",
+      "place": "北辰校区教学楼12-C113",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5469.html"
     }
   ]
 }
