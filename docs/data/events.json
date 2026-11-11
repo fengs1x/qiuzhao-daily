@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-11T18:03:25+08:00",
+  "generated_at": "2026-11-12T02:13:50+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 18,
+  "count": 17,
   "events": [
-    {
-      "id": "5476",
-      "title": "“键证青春，芯向未来”青禾晶元2027届校园招聘宣讲会",
-      "event_at": "2026-11-10T18:40",
-      "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5476.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5479",
       "title": "向世界 挥一拳 三一集团2027届秋季校园招聘正式启动",
@@ -62,7 +53,9 @@
       "title": "中铁建工集团第三建设有限公司2027校园招聘",
       "event_at": "2026-11-13T14:00",
       "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5475.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5475.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5473",
