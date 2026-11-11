@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-11T10:25:08+08:00",
+  "generated_at": "2026-11-11T18:03:25+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 16,
+  "count": 18,
   "events": [
     {
       "id": "5476",
@@ -100,6 +100,13 @@
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5458.html"
     },
     {
+      "id": "5483",
+      "title": "爱旭股份2027届校园招聘",
+      "event_at": "2026-11-18T15:55",
+      "place": "北辰校区教学楼12-C111",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5483.html"
+    },
+    {
       "id": "5484",
       "title": "云尖信息2027届校园招聘宣讲会",
       "event_at": "2026-11-19T14:00",
@@ -119,6 +126,13 @@
       "event_at": "2026-11-20T14:00",
       "place": "北辰校区教学楼12-A105",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5486.html"
+    },
+    {
+      "id": "5489",
+      "title": "燕龙集团2027校招",
+      "event_at": "2026-11-25T15:00",
+      "place": "北辰校区教学楼12-D105",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5489.html"
     },
     {
       "id": "5469",
