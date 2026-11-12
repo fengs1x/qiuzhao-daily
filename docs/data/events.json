@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T11:31:09+08:00",
+  "generated_at": "2026-11-12T21:29:07+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 17,
+  "count": 18,
   "events": [
     {
       "id": "5479",
@@ -105,6 +105,13 @@
       "event_at": "2026-11-19T14:00",
       "place": "北辰校区教学楼12-C106",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5484.html"
+    },
+    {
+      "id": "5490",
+      "title": "中建四局北京公司秋季招聘宣讲会",
+      "event_at": "2026-11-20T14:00",
+      "place": "北辰校区教学楼12-A103",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5490.html"
     },
     {
       "id": "5487",
