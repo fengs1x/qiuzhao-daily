@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T10:31:16+08:00",
+  "generated_at": "2026-11-16T18:24:03+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 11,
+  "count": 12,
   "events": [
     {
       "id": "5459",
@@ -84,6 +84,13 @@
       "event_at": "2026-11-20T14:00",
       "place": "北辰校区教学楼12-A105",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5486.html"
+    },
+    {
+      "id": "5493",
+      "title": "山推工程机械股份有限公司2027届校园招聘",
+      "event_at": "2026-11-25T18:40",
+      "place": "北辰校区教学楼12-A112",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5493.html"
     },
     {
       "id": "5469",
