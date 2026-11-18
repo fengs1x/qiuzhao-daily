@@ -1,32 +1,23 @@
 {
-  "generated_at": "2026-11-18T11:59:31+08:00",
+  "generated_at": "2026-11-18T21:36:43+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
   "count": 12,
   "events": [
-    {
-      "id": "5485",
-      "title": "中安广源2027校园招聘专场宣讲会",
-      "event_at": "2026-11-17T18:40",
-      "place": "北辰校区教学楼12-C110",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5485.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5458",
-      "title": "中国建筑科学研究院有限公司2027校园招聘",
-      "event_at": "2026-11-17T18:40",
-      "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5458.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5483",
       "title": "爱旭股份2027届校园招聘",
       "event_at": "2026-11-18T15:55",
       "place": "北辰校区教学楼12-C111",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5483.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
+    },
+    {
+      "id": "5493",
+      "title": "山推工程机械股份有限公司2027届校园招聘",
+      "event_at": "2026-11-19T14:00",
+      "place": "原11月25日宣讲会调整至11月19日北辰校区教学楼12-D108",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5493.html",
       "pdf_attachments": [],
       "pdf_facts": []
     },
@@ -62,7 +53,9 @@
       "title": "中建四局北京公司秋季招聘宣讲会",
       "event_at": "2026-11-20T14:00",
       "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5490.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5490.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5487",
@@ -79,11 +72,11 @@
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5486.html"
     },
     {
-      "id": "5493",
-      "title": "山推工程机械股份有限公司2027届校园招聘",
+      "id": "5497",
+      "title": "太平洋寿险河北分公司2027届秋季校园招聘",
       "event_at": "2026-11-25T18:40",
-      "place": "北辰校区教学楼12-A112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5493.html"
+      "place": "北辰校区教学楼12-C112",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5497.html"
     },
     {
       "id": "5469",
@@ -98,6 +91,13 @@
       "event_at": "2026-11-26T14:00",
       "place": "北辰校区教学楼12-A103",
       "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5495.html"
+    },
+    {
+      "id": "5496",
+      "title": "河北高速公路集团有限公司 2027届校园招聘",
+      "event_at": "2026-11-28T18:40",
+      "place": "北辰校区教学楼12-A103",
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5496.html"
     }
   ]
 }
