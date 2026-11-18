@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-17T22:00:55+08:00",
+  "generated_at": "2026-11-18T11:59:31+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 13,
+  "count": 12,
   "events": [
-    {
-      "id": "5459",
-      "title": "中国铁路通信信号上海工程局有限公司2027年校园招聘",
-      "event_at": "2026-11-17T10:25",
-      "place": "北辰校区教学楼12-A106",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5459.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5485",
       "title": "中安广源2027校园招聘专场宣讲会",
@@ -62,7 +53,9 @@
       "title": "蜂巢能源2027届校园专场招聘会",
       "event_at": "2026-11-20T14:00",
       "place": "北辰校区教学楼12-C113",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5491.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5491.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5490",
