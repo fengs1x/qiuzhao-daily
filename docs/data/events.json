@@ -1,17 +1,8 @@
 {
-  "generated_at": "2026-11-19T11:56:33+08:00",
+  "generated_at": "2026-11-19T22:02:09+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 11,
+  "count": 10,
   "events": [
-    {
-      "id": "5483",
-      "title": "爱旭股份2027届校园招聘",
-      "event_at": "2026-11-18T15:55",
-      "place": "北辰校区教学楼12-C111",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5483.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5493",
       "title": "山推工程机械股份有限公司2027届校园招聘",
@@ -62,7 +53,9 @@
       "title": "北汽福田汽车股份有限公司2027秋季招聘",
       "event_at": "2026-11-20T14:00",
       "place": "红桥校区南院九教9-0105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5487.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5487.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5486",
