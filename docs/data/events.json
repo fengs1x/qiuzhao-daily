@@ -1,35 +1,8 @@
 {
-  "generated_at": "2026-11-20T11:48:57+08:00",
+  "generated_at": "2026-11-20T21:45:55+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 10,
+  "count": 7,
   "events": [
-    {
-      "id": "5493",
-      "title": "山推工程机械股份有限公司2027届校园招聘",
-      "event_at": "2026-11-19T14:00",
-      "place": "原11月25日宣讲会调整至11月19日北辰校区教学楼12-D108",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5493.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5492",
-      "title": "燕龙集团2027校招",
-      "event_at": "2026-11-19T14:00",
-      "place": "北辰校区教学楼12-C206",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5492.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5484",
-      "title": "云尖信息2027届校园招聘宣讲会",
-      "event_at": "2026-11-19T14:00",
-      "place": "北辰校区教学楼12-C106",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5484.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5491",
       "title": "蜂巢能源2027届校园专场招聘会",
@@ -62,21 +35,27 @@
       "title": "中大力德2027届校园招聘",
       "event_at": "2026-11-20T14:00",
       "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5486.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5486.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5497",
       "title": "太平洋寿险河北分公司2027届秋季校园招聘",
       "event_at": "2026-11-25T18:40",
       "place": "北辰校区教学楼12-C112",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5497.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5497.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5469",
       "title": "“青春有诺，磷动未来”昆明川金诺化工2027届校招宣讲会",
       "event_at": "2026-11-25T18:40",
       "place": "北辰校区教学楼12-C113",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5469.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5469.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     },
     {
       "id": "5496",
