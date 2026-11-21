@@ -1,44 +1,8 @@
 {
-  "generated_at": "2026-11-21T11:39:53+08:00",
+  "generated_at": "2026-11-21T21:10:45+08:00",
   "source": "河北工业大学就业指导中心宣讲会",
-  "count": 7,
+  "count": 3,
   "events": [
-    {
-      "id": "5491",
-      "title": "蜂巢能源2027届校园专场招聘会",
-      "event_at": "2026-11-20T14:00",
-      "place": "北辰校区教学楼12-C113",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5491.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5490",
-      "title": "中建四局北京公司秋季招聘宣讲会",
-      "event_at": "2026-11-20T14:00",
-      "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5490.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5487",
-      "title": "北汽福田汽车股份有限公司2027秋季招聘",
-      "event_at": "2026-11-20T14:00",
-      "place": "红桥校区南院九教9-0105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5487.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
-    {
-      "id": "5486",
-      "title": "中大力德2027届校园招聘",
-      "event_at": "2026-11-20T14:00",
-      "place": "北辰校区教学楼12-A105",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5486.html",
-      "pdf_attachments": [],
-      "pdf_facts": []
-    },
     {
       "id": "5497",
       "title": "太平洋寿险河北分公司2027届秋季校园招聘",
@@ -62,7 +26,9 @@
       "title": "河北高速公路集团有限公司 2027届校园招聘",
       "event_at": "2026-11-28T18:40",
       "place": "北辰校区教学楼12-A103",
-      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5496.html"
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5496.html",
+      "pdf_attachments": [],
+      "pdf_facts": []
     }
   ]
 }
