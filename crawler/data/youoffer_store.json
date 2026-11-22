@@ -234891,6 +234891,104 @@
    "apply_url": "https://mp.weixin.qq.com/s/eYyi__U2lGKDn8kn01IjJA",
    "notice_url": "https://mp.weixin.qq.com/s/eYyi__U2lGKDn8kn01IjJA",
    "id": "698d647804bfd5db"
+  },
+  "1445d226cba80240": {
+   "source": "youoffer",
+   "name": "上海市宋校嘉定实验学校",
+   "company_type": "事业单位",
+   "location": "上海",
+   "position": "各学科实习教师岗位",
+   "post_date": "2026-11-22",
+   "deadline": "招满为止",
+   "recruit_type": "实习",
+   "target_years": "2026,2027届",
+   "apply_url": "https://mp.weixin.qq.com/s/qyxkpdrJY4SSrk4rNKXehA",
+   "notice_url": "https://mp.weixin.qq.com/s/qyxkpdrJY4SSrk4rNKXehA",
+   "id": "1445d226cba80240"
+  },
+  "9298f2c7fd4405a1": {
+   "source": "youoffer",
+   "name": "清华附中天府学校",
+   "company_type": "事业单位",
+   "location": "四川眉山",
+   "position": "各学科教师岗位，具体见投递方式链接",
+   "post_date": "2026-11-22",
+   "deadline": "2026-11-27",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://mp.weixin.qq.com/s/9AU8Ird1MjyjbndofytEPg",
+   "notice_url": "https://mp.weixin.qq.com/s/9AU8Ird1MjyjbndofytEPg",
+   "id": "9298f2c7fd4405a1"
+  },
+  "ebb51da1027b355c": {
+   "source": "youoffer",
+   "name": "应急管理部应急总医院",
+   "company_type": "事业单位",
+   "location": "北京",
+   "position": "临床医生、治疗师、诊断医生、药师、设备工程师",
+   "post_date": "2026-11-22",
+   "deadline": "2026-12-01",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://www.qgsydw.com/xxywzlzt/bmzt/2513",
+   "notice_url": "https://mp.weixin.qq.com/s/5sz5LabD4NZ2TR7bgwaAQQ",
+   "id": "ebb51da1027b355c"
+  },
+  "52b919916e0a624e": {
+   "source": "youoffer",
+   "name": "福建古雷石化有限公司",
+   "company_type": "外企/合资",
+   "location": "福建漳州",
+   "position": "化工工艺类专业机械设备类专业综合管理类专业",
+   "post_date": "2026-11-22",
+   "deadline": "2026-12-04",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://mp.weixin.qq.com/s/N_ntti4GA8w5fj2xNonOQw",
+   "notice_url": "https://mp.weixin.qq.com/s/N_ntti4GA8w5fj2xNonOQw",
+   "id": "52b919916e0a624e"
+  },
+  "d17b9c761b32b0b5": {
+   "source": "youoffer",
+   "name": "江西金融租赁股份有限公司",
+   "company_type": "央国企",
+   "location": "江西南昌",
+   "position": "业务经理岗运营管理岗资金交易岗",
+   "post_date": "2026-11-22",
+   "deadline": "2026-12-20",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://jxjzxz2027.zhaopin.com/jobs/index.html",
+   "notice_url": "https://mp.weixin.qq.com/s/5ClNxAtkXlzYKO1JIvrwZA",
+   "id": "d17b9c761b32b0b5"
+  },
+  "6aee709d7eca68ab": {
+   "source": "youoffer",
+   "name": "中国网安/30所",
+   "company_type": "央国企",
+   "location": "成都",
+   "position": "技术研究类软件开发类网络安全类测试类算法类硬件开发类人工智能类",
+   "post_date": "2026-11-22",
+   "deadline": "招满为止",
+   "recruit_type": "秋招",
+   "target_years": "2027届",
+   "apply_url": "https://app.mokahr.com/campus_apply/cetc30/36270#/jobs?location=",
+   "notice_url": "https://mp.weixin.qq.com/s/GvVqagllSt8i_8IjPAgzBg",
+   "id": "6aee709d7eca68ab"
+  },
+  "a5796de049caded8": {
+   "source": "youoffer",
+   "name": "时代广汽",
+   "company_type": "民企",
+   "location": "广州",
+   "position": "财务实习生",
+   "post_date": "2026-11-22",
+   "deadline": "招满为止",
+   "recruit_type": "实习",
+   "target_years": "2027届",
+   "apply_url": "https://mp.weixin.qq.com/s/V6tMUjSlVbIlE0pqvolHkQ?scene=1&click_id=1094980833",
+   "notice_url": "https://mp.weixin.qq.com/s/V6tMUjSlVbIlE0pqvolHkQ?scene=1&click_id=1094980833",
+   "id": "a5796de049caded8"
   }
  },
  "pages_done": [
@@ -235456,7 +235554,8 @@
   560,
   561,
   562,
-  563
+  563,
+  564
  ],
- "last_run": "2026-11-22 02:45:02"
+ "last_run": "2026-11-22 10:30:48"
 }
